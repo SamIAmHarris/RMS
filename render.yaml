@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: refuel-mock-server
+    runtime: python
+    buildCommand: pip install -r app/requirements.txt
+    startCommand: gunicorn app.app:app --chdir app -w 4 --threads 2 --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
