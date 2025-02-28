@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request, abort
 
 app = Flask(__name__)
 
@@ -222,9 +222,12 @@ ASSESSMENT_RESPONSE = {
     }
 }
 
-ACTION_NEXT = {"action": {"next": {}}}
-ACTION_JUMP = {"action": {"jump": {"item_id": "-1"}}}
-ACTION_MARK_COMPLETED = {"action": {"mark_completed": {}}}
+# Action responses
+ACTIONS = {
+    "next": {"action": {"next": {}}},
+    "jump": {"action": {"jump": {"item_id": "-1"}}},
+    "mark_completed": {"action": {"mark_completed": {}}}
+}
 
 @app.route('/')
 def index():
@@ -234,17 +237,28 @@ def index():
 def get_assessment():
     return jsonify(ASSESSMENT_RESPONSE)
 
-@app.route('/api/action/next', methods=['GET'])
-def get_action_next():
-    return jsonify(ACTION_NEXT)
-
-@app.route('/api/action/jump', methods=['GET'])
-def get_action_jump():
-    return jsonify(ACTION_JUMP)
-
-@app.route('/api/action/mark_completed', methods=['GET'])
-def get_action_mark_completed():
-    return jsonify(ACTION_MARK_COMPLETED)
+@app.route('/api/action', methods=['GET'])
+def get_action():
+    # Get the required type parameter
+    action_type = request.args.get('type')
+    
+    # If type parameter is missing, return 400 Bad Request
+    if not action_type:
+        abort(400, description="Missing required parameter: type")
+    
+    # Check if the action type exists
+    if action_type not in ACTIONS:
+        abort(404, description=f"Action type '{action_type}' not found")
+    
+    # Get the response based on the action type
+    response = ACTIONS[action_type]
+    
+    # If it's a jump action and id parameter is provided, update the item_id
+    if action_type == "jump" and request.args.get('id'):
+        item_id = request.args.get('id')
+        response = {"action": {"jump": {"item_id": item_id}}}
+    
+    return jsonify(response)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)
