@@ -203,6 +203,38 @@ ASSESSMENT_RESPONSE = {
                 }
             },
             {
+                "fixed": {
+                    "item_id": "1200",
+                    "select": {
+                        "min": 1,
+                        "max": 1
+                    },
+                    "prompt": "¡We should skip this one!",
+                    "responses": [
+                        {
+                            "response_id": "1",
+                            "label": "8+"
+                        },
+                        {
+                            "response_id": "2",
+                            "label": "5-7"
+                        },
+                        {
+                            "response_id": "3",
+                            "label": "3-4"
+                        },
+                        {
+                            "response_id": "4",
+                            "label": "1-2"
+                        },
+                        {
+                            "response_id": "5",
+                            "label": "None"
+                        }
+                    ]
+                }
+            },
+            {
                 "scale": {
                     "item_id": "1004",
                     "prompt": "On a scale of 1-5, how would you rate your energy levels?",
@@ -226,39 +258,132 @@ ASSESSMENT_RESPONSE = {
 ACTIONS = {
     "next": {"action": {"next": {}}},
     "jump": {"action": {"jump": {"item_id": "-1"}}},
-    "mark_completed": {"action": {"mark_completed": {}}}
+    "mark_completed": {"action": {"mark_completed": {}}},
+    "results": {
+        "details": {
+            "bradburn": {
+                "score": -4,
+                "trend": [
+                    {
+                        "label": "Jan",
+                        "score": 3
+                    },
+                    {
+                        "label": "Feb",
+                        "score": 0
+                    },
+                    {
+                        "label": "Mar",
+                        "score": -1
+                    },
+                    {
+                        "label": "Apr",
+                        "score": -4
+                    }
+                ]
+            }
+        },
+
+        "heading": [
+            {
+                "h1": {
+                    "text": "Your responses indicate a negative psychological wellbeing. That is concerning 😐."
+                }
+            }
+        ],
+        "meaning": [
+            {
+                "h2": {
+                    "text": "What does this mean?"
+                }
+            },
+            {
+                "p": {
+                    "text": "A -4 score means you may be at risk to falling into depression, lowered self esteem, and self-harm."
+                }
+            },
+            {
+                "p": {
+                    "text": "Your score is not cause for alarm but you may want to look for opportunities and get help building a positive wellbeing improvement plan."
+                }
+            },
+            {
+                "button": {
+                    "style": "help",
+                    "title": "Contact the Psychological Health Resource Center for Help",
+                    "url": "https://projectrefuel.app"
+                }
+            }
+        ],
+        "scoring": [
+            {
+                "h2": {
+                    "text": "How is the score calculated?"
+                }
+            },
+            {
+                "p": {
+                    "text": "Questions 1-5 ask about positive emotions you are having. Each Yes adds one point. Questions 6-10 ask about negative emotions you might have. Each Yes response subtracts one point. Scores range from +5 to -5."
+                }
+            },
+            {
+                "button": {
+                    "style": "normal",
+                    "title": "Learn More About",
+                    "subtitle": "Refuel Mental Welbeing Checkin",
+                    "url": "https://projectrefuel.app"
+                }
+            }
+        ],
+        "save": [
+            {
+                "h2": {
+                    "text": "Save your results?"
+                }
+            },
+            {
+                "p": {
+                    "text": "As promised, we give you the option to save your results. Refuel’s AI wellness engine will keep an eye on things and make suggestions to improve your mental wellbeing. Your results will be shared anonymously with your unit leader."
+                }
+            }
+        ]
+    }
 }
+
 
 @app.route('/')
 def index():
     return jsonify({"message": "Mock API Server is running"})
 
+
 @app.route('/api/assessment', methods=['GET'])
 def get_assessment():
     return jsonify(ASSESSMENT_RESPONSE)
+
 
 @app.route('/api/action', methods=['GET'])
 def get_action():
     # Get the required type parameter
     action_type = request.args.get('type')
-    
+
     # If type parameter is missing, return 400 Bad Request
     if not action_type:
         abort(400, description="Missing required parameter: type")
-    
+
     # Check if the action type exists
     if action_type not in ACTIONS:
         abort(404, description=f"Action type '{action_type}' not found")
-    
+
     # Get the response based on the action type
     response = ACTIONS[action_type]
-    
+
     # If it's a jump action and id parameter is provided, update the item_id
     if action_type == "jump" and request.args.get('id'):
         item_id = request.args.get('id')
         response = {"action": {"jump": {"item_id": item_id}}}
-    
+
     return jsonify(response)
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)
