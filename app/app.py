@@ -385,5 +385,29 @@ def get_action():
     return jsonify(response)
 
 
+@app.route('/api/response', methods=['GET'])
+def get_response():
+    # Get the item_id parameter
+    item_id = request.args.get('item_id')
+
+    # If item_id parameter is missing, return 400 Bad Request
+    if not item_id:
+        abort(400, description="Missing required parameter: item_id")
+
+    # Return appropriate action based on item_id
+    if item_id in ["1", "2", "1200"]:
+        # For items 1 and 2, return "next" action
+        return jsonify(ACTIONS["next"])
+    elif item_id == "1001":
+        # For item 1001, return "jump" action to item 1004
+        return jsonify({"action": {"jump": {"item_id": "1004"}}})
+    elif item_id == "1004":
+        # For item 1004, return "results" action
+        return jsonify(ACTIONS["mark_completed"])
+    else:
+        # Default to "next" for any other item_id
+        return jsonify(ACTIONS["next"])
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)
