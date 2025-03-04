@@ -241,13 +241,13 @@ ASSESSMENT_RESPONSE = {
                     "prompt": "On a scale of 1-5, how would you rate your energy levels?",
                     "min": {
                         "value": 1,
-                        "label": "normal",
-                        "emoji": "😀"
+                        "label": "low",
+                        "emoji": "😴"
                     },
                     "max": {
                         "value": 5,
-                        "label": "low",
-                        "emoji": "😴"
+                        "label": "high",
+                        "emoji": "😀"
                     }
                 }
             }
