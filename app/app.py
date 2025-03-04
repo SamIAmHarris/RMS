@@ -1,4 +1,5 @@
-from flask import Flask, jsonify, request, abort
+from flask import Flask, jsonify, request, abort, Response
+import json
 
 app = Flask(__name__)
 
@@ -358,7 +359,7 @@ def index():
 
 @app.route('/api/assessment', methods=['GET'])
 def get_assessment():
-    return jsonify(ASSESSMENT_RESPONSE)
+    return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
 
 
 @app.route('/api/action', methods=['GET'])
