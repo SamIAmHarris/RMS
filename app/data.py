@@ -15,6 +15,10 @@ ASSESSMENT_RESPONSE = {
             "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
             "background_color": "#007AFF"
         },
+        "options": {
+            "reminder": False,
+            "skip": True
+        },
         "items": [
             {
                 "introduction": {
