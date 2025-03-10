@@ -43,6 +43,10 @@ def get_action():
 def get_response():
     # Get the item_id parameter
     item_id = request.args.get('item_id')
+    skip = request.args.get("skip", default="false").lower() == "true"
+
+    if skip:
+        return jsonify(ACTIONS["next"])
 
     # If item_id parameter is missing, return 400 Bad Request
     if not item_id:
