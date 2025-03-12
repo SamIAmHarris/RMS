@@ -68,12 +68,12 @@ def get_response():
 
 
 @app.route('/api/introduction', methods=['GET'])
-def get_response():
+def get_introduction():
     return jsonify(INTRODUCTION_RESPONSE)
 
 
 @app.route('/api/results', methods=['GET'])
-def get_response():
+def get_results():
     return jsonify(RESULTS_RESPONSE)
 
 
