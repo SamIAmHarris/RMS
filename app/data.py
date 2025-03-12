@@ -349,3 +349,101 @@ ACTIONS = {
         ]
     }
 }
+
+INTRODUCTION_RESPONSE = {
+    "heading": [
+        {
+            "h1": {
+                "text": "Here's the deal.\n10 questions. 5 minutes.\nWith that, we can help you track and improve your mental wellbeing."
+            }
+        }
+    ],
+    "process": [
+        {
+            "h2": {
+                "text": "How it Works"
+            }
+        },
+        {
+            "p": {
+                "text": "This mental wellbeing checkin asks 10 Yes/No questions about your emotions and feels over the past few weeks."
+            }
+        },
+        {
+            "p": {
+                "text": "Questions 1-5 ask about positive emotions you are having. Each Yes response adds one point to your score."
+            }
+        },
+        {
+            "p": {
+                "text": "Questions 6-10 ask about negative feels you might have. Each Yes response subtracts one point from your score."
+            }
+        },
+        {
+            "p": {
+                "text": "Your score will range from +5 to -5. Positive scores indicate a healthy sense of wellbeing. Negative scores indicate you may want to look for opportunities to grow and reach balance."
+            }
+        },
+        {
+            "p": {
+                "text": "Here is a *sample* of the score chart you will see at the end of the checkin:"
+            }
+        },
+        {
+            "img": {
+                "url": "https://refuelapp-dev.web.app/images/bradburn/sample_score.png"
+            }
+        },
+        {
+            "p": {
+                "text": "From time to time, monthly, we'll checkin again on your mental wellbeing with these same questions so we can follow trends on how things are progressing. You will see a chart like this over time as you continue checking in with us."
+            }
+        },
+        {
+            "img": {
+                "url": "https://refuelapp-dev.web.app/images/bradburn/sample_trend.png"
+            }
+        }
+    ],
+    "purpose": [
+        {
+            "h2": {
+                "text": "Why do this? What is the purpose?"
+            }
+        },
+        {
+            "p": {
+                "text": "The checkin is totally voluntary. So, no pressure. Don't do it if you are not comfortable."
+            }
+        },
+        {
+            "p": {
+                "text": "Do this so you can understand if your mental wellbeing is positive or negative and then Refuel can give you better, more focused content in your Today feed that can be helpful to improve yourself in the areas of self-acceptance, building a sense of purpose, creating positive relations with others, and achieveing personal growth. Sound good?"
+            }
+        }
+    ],
+    "privacy": [
+        {
+            "h2": {
+                "text": "Who will see my results?"
+            }
+        },
+        {
+            "p": {
+                "text": "Besides you, your results are shared *anonymously* with your unit commander."
+            }
+        },
+        {
+            "p": {
+                "text": "Before you bail and hit that X in the top left corner, give us a chance to earn your trust. Do the checkin and we'll give you the option at the end to bail and we'll delete all your answers. That's a promise."
+            }
+        },
+        {
+            "p": {
+                "text": "At Project Refuel, we are here to help you and your privacy and trust is important."
+            }
+        }
+    ]
+}
+
+RESULTS_RESPONSE = ACTIONS["results"]

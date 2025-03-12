@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, abort, Response
 import json
-from data import ASSESSMENT_RESPONSE, ACTIONS
+from data import ASSESSMENT_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE, RESULTS_RESPONSE
 
 app = Flask(__name__)
 
@@ -65,6 +65,16 @@ def get_response():
     else:
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
+
+
+@app.route('/api/introduction', methods=['GET'])
+def get_response():
+    return jsonify(INTRODUCTION_RESPONSE)
+
+
+@app.route('/api/results', methods=['GET'])
+def get_response():
+    return jsonify(RESULTS_RESPONSE)
 
 
 if __name__ == '__main__':
