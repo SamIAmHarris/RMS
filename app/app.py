@@ -67,6 +67,11 @@ def get_response():
         return jsonify(ACTIONS["next"])
 
 
+@app.route("/api/content_actions", methods=['POST'])
+def submit_content_action():
+    return jsonify("{}")
+
+
 @app.route('/api/introduction', methods=['GET'])
 def get_introduction():
     return jsonify(INTRODUCTION_RESPONSE)
