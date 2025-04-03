@@ -72,6 +72,11 @@ def get_response():
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
 
+@app.route('/api/content/<string:content_id>', methods=['GET'])
+def get_content(content_id):
+    print(content_id)
+
+    return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
 
 @app.route("/api/content_actions", methods=['POST'])
 def submit_content_action():
