@@ -446,4 +446,60 @@ INTRODUCTION_RESPONSE = {
     ]
 }
 
+EXPLORE_RESPONSE = {
+    "explore": {
+        "content": [
+            {
+                "group": {
+                    "kind": "checkin",
+                    "content": [
+                        {
+                            "preview": {
+                                "duration": 5,
+                                "template": "default",
+                                "background_color": "#6956B3",
+                                "content_id": "8-8404434e116f4ab18f82a1240d559955-07",
+                                "units": "minutes",
+                                "focus_id": "ideological/spiritual",
+                                "image": "https://refuel-backend.d10.us.swri.org/thumbnail_images/spiritual.jpg",
+                                "kind": {
+                                    "assessment": {
+                                        "details": {
+                                            "champSSFS": {
+                                                "score": 2.764705882352941
+                                            }
+                                        }
+                                    }
+                                },
+                                "title": "Last time we asked, your spiritual fitness was low. Let's see if things improved."
+                            }
+                        },
+                        {
+                            "preview": {
+                                "duration": 5,
+                                "template": "default",
+                                "background_color": "#30B0C7",
+                                "content_id": "128-bfd70889edd84353b996dab8ef74378d-07",
+                                "units": "minutes",
+                                "focus_id": "psychological",
+                                "image": "https://refuel-backend.d10.us.swri.org/thumbnail_images/mental-wellbeing.png",
+                                "kind": {
+                                    "assessment": {
+                                        "details": {
+                                            "bradburn": {
+                                                "score": 2
+                                            }
+                                        }
+                                    }
+                                },
+                                "title": "It's a good day to ask about your mental wellbeing. Last time, you were feeling positive."
+                            }
+                        }
+                    ]
+                }
+            },
+        ]
+    }
+}
+
 RESULTS_RESPONSE = ACTIONS["results"]

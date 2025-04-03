@@ -1,3 +1,5 @@
+from crypt import methods
+
 from flask import Flask, jsonify, request, abort, Response
 import json
 from data import ASSESSMENT_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE, RESULTS_RESPONSE
@@ -13,6 +15,10 @@ def index():
 @app.route('/api/assessment', methods=['GET'])
 def get_assessment():
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
+
+@app.route('/api/explore', methods=['GET'])
+def get_explore():
+    return Response(json.dumps(RESULTS_RESPONSE), mimetype='application/json')
 
 
 @app.route('/api/action', methods=['GET'])
