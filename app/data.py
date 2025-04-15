@@ -503,3 +503,55 @@ EXPLORE_RESPONSE = {
 }
 
 RESULTS_RESPONSE = ACTIONS["results"]
+
+PFT_TEST_RESPONSE = {
+    "test": {
+        "id": 1,
+        "type": "PFT",
+        "description": "PFT description",
+        "programmed_exercises": [
+            {
+                "id": "1",  # exercise table id
+                "index": 0,
+                "name": "pushups",
+                "sets_data": {
+                    "prescribed_suffix": "sec",
+                    "loggable_suffix": "rep",
+                    "items": [
+                        {
+                            "prescribed_value": 60.0,
+                        },
+                    ]
+                }
+            },
+            {
+                "id": "2",
+                "index": 1,
+                "name": "situps",
+                "sets_data": {
+                    "prescribed_suffix": "sec",
+                    "loggable_suffix": "rep",
+                    "items": [
+                        {
+                            "prescribed_value": 60.0,
+                        },
+                    ],
+                }
+            },
+            {
+                "id": "3",
+                "index": 2,
+                "name": "run",
+                "sets_data": {
+                    "prescribed_suffix": "mi",
+                    "loggable_suffix": "pace",
+                    "items": [
+                        {
+                            "prescribed_value": 1.5,
+                        }
+                    ]
+                }
+            }
+        ],
+    }
+}

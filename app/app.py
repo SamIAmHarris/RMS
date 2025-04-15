@@ -2,7 +2,8 @@ from crypt import methods
 
 from flask import Flask, jsonify, request, abort, Response
 import json
-from data import ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE, RESULTS_RESPONSE
+
+from data import ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE
 
 app = Flask(__name__)
 
@@ -81,6 +82,10 @@ def get_content(content_id):
 @app.route("/api/content_actions", methods=['POST'])
 def submit_content_action():
     return jsonify("{}")
+
+@app.route("/api/pft_test", methods=['GET'])
+def submit_content_action():
+    return jsonify(PFT_TEST_RESPONSE)
 
 
 @app.route('/api/introduction', methods=['GET'])
