@@ -84,7 +84,7 @@ def submit_content_action():
     return jsonify("{}")
 
 @app.route("/api/pft_test", methods=['GET'])
-def submit_content_action():
+def pft_mock_test():
     return jsonify(PFT_TEST_RESPONSE)
 
 
