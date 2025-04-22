@@ -3,8 +3,8 @@ import json
 from datetime import date
 from typing import List, Dict
 
-from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE,
-                  RESULTS_RESPONSE, PFT_TEST_RESPONSE, PFT_SUBMITTED_RESPONSE)
+from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS,
+                  INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE)
 
 app = Flask(__name__)
 
