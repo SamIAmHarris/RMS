@@ -511,7 +511,7 @@ PFT_TEST_RESPONSE = {
         "description": "PFT description",
         "programmed_exercises": [
             {
-                "id": "1",  # exercise table id
+                "exercise_id": "1",
                 "index": 0,
                 "name": "pushups",
                 "sets_data": {
@@ -553,5 +553,220 @@ PFT_TEST_RESPONSE = {
                 }
             }
         ],
+    }
+}
+
+PFT_LOGGED_RESPONSE = {
+    "exercise_id": "1",
+    "notes": "I CRUSHED THIS. I AM GOKU",
+    "logged_sets_data": [
+        {
+            "set_number": 0,
+            "logged_value": 38,
+            "logged_suffix": "rep",
+            "notes": "Really hard for me, I need to work on my pushups."
+        },
+        {
+            "set_number": 1,
+            "logged_value": 52,
+            "logged_suffix": "rep"
+        },
+        {
+            "set_number": 2,
+            "logged_value": 11.4,
+            "logged_suffix": "pace"
+        }
+    ]
+}
+
+VERTICAL_PAGE_RESPONSE = {
+    "vertical_page": {
+        "vertical_page_id": "1004",
+        "focus_id": "stress",
+        "title": "Training vs Instinct",
+        "header_image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
+        "preview": {
+            "kind": {"vertical_page": {}},
+            "content_id": "1004",
+            "focus_id": "stress",
+            "duration": 5,
+            "units": "minute",
+            "title": "Training vs Instinct",
+            "subtitle": "Let's work through an interactive scenario to practice...",
+            "template": "default",
+            "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
+            "background_color": "#007AFF"
+        },
+        "options": {
+            "skip": True
+        },
+        "items": [
+            {
+                "section": {
+                    "item_id": "12345",
+                    "markdown": "all markdown passed down in whole, instead of it all chunked out.",
+                    "sections": [
+                        {
+                            "h1": {
+                                "text": "When Protocol Meets The Unknown"
+                            },
+                        },
+                        {
+                            "p": {
+                                "text": "Standard Operating Procedures (SOPs) are built on repetition. They're forged through hard-earned lessons, codified into protocols that can be trained, drilled, and relied on. In high-stakes environments, they act like muscle memory—speeding up decisions when there's no time to hesitate.  But what happens when the moment doesn’t look like the drill? When the person in front of you isn’t behaving like the pattern you’ve trained for? In these moments, something else kicks in. "
+                            },
+                        },
+                        {
+                            "img": {
+                                "url": "https://refuelapp-dev.web.app/images/bradburn/sample_score.png"
+                            }
+                        },
+                        {
+                            "q": {
+                                "text": "I am a quote by a wise wise owl"
+                            }
+                        },
+                        {
+                            "box": {
+                                "text": "I am boxed in, nothing going outside the box"
+                            }
+                        },
+                    ]
+                },
+                "fixed": {
+                    "item_id": "1",
+                    "select": {
+                        "min": 1,
+                        "max": 6
+                    },
+                    "prompt": "Over the last 7 days, how do you feel about your sleep?",
+                    "responses": [
+                        {
+                            "response_id": "1",
+                            "label": "Tired"
+                        },
+                        {
+                            "response_id": "2",
+                            "label": "Well Rested"
+                        },
+                        {
+                            "response_id": "3",
+                            "label": "Worn Out"
+                        },
+                        {
+                            "response_id": "4",
+                            "label": "Energized"
+                        },
+                        {
+                            "response_id": "5",
+                            "label": "Groggy"
+                        },
+                        {
+                            "response_id": "6",
+                            "label": "Satisfied"
+                        }
+                    ]
+                }
+            },
+            {
+                "fixed": {
+                    "item_id": "2",
+                    "select": {
+                        "min": 1,
+                        "max": 1
+                    },
+                    "prompt": "On average, how many hours of sleep are you getting each night?",
+                    "responses": [
+                        {
+                            "response_id": "1",
+                            "label": "8+"
+                        },
+                        {
+                            "response_id": "2",
+                            "label": "5-7"
+                        },
+                        {
+                            "response_id": "3",
+                            "label": "3-4"
+                        },
+                        {
+                            "response_id": "4",
+                            "label": "1-2"
+                        },
+                        {
+                            "response_id": "5",
+                            "label": "None"
+                        }
+                    ]
+                }
+            },
+            {
+                "free": {
+                    "item_id": "1001",
+                    "prompt": "What things keep you from getting a good night sleep?",
+                    "options": {
+                        "text": {
+                            "characters": {
+                                "min": 2,
+                                "max": 500
+                            }
+                        },
+                        "audio": {
+                            "time": {
+                                "max": 60
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "fixed": {
+                    "item_id": "1200",
+                    "select": {
+                        "min": 1,
+                        "max": 1
+                    },
+                    "prompt": "¡We should skip this one!",
+                    "responses": [
+                        {
+                            "response_id": "1",
+                            "label": "8+"
+                        },
+                        {
+                            "response_id": "2",
+                            "label": "5-7"
+                        },
+                        {
+                            "response_id": "3",
+                            "label": "3-4"
+                        },
+                        {
+                            "response_id": "4",
+                            "label": "1-2"
+                        },
+                        {
+                            "response_id": "5",
+                            "label": "None"
+                        }
+                    ]
+                }
+            },
+            {
+                "scale": {
+                    "item_id": "1004",
+                    "prompt": "On a scale of 1-5, how would you rate your energy levels?",
+                    "min": {
+                        "value": 1,
+                        "label": "low",
+                        "emoji": "😴"
+                    },
+                    "max": {
+                        "value": 5,
+                        "label": "high",
+                        "emoji": "😀"
+                    }
+                }
+            }
+        ]
     }
 }
