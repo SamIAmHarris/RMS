@@ -1,7 +1,10 @@
 from flask import Flask, jsonify, request, abort, Response
 import json
+from datetime import date
+from typing import List, Dict
 
-from data import ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE
+from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, INTRODUCTION_RESPONSE,
+                  RESULTS_RESPONSE, PFT_TEST_RESPONSE, PFT_SUBMITTED_RESPONSE)
 
 app = Flask(__name__)
 
@@ -14,6 +17,7 @@ def index():
 @app.route('/api/assessment', methods=['GET'])
 def get_assessment():
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
+
 
 @app.route('/api/explore', methods=['GET'])
 def get_explore():
@@ -71,19 +75,38 @@ def get_response():
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
 
+
 @app.route('/api/content/<string:content_id>', methods=['GET'])
 def get_content(content_id):
     print(content_id)
 
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
 
+
 @app.route("/api/content_actions", methods=['POST'])
 def submit_content_action():
     return jsonify("{}")
 
+
 @app.route("/api/pft_test", methods=['GET'])
 def pft_mock_test():
     return jsonify(PFT_TEST_RESPONSE)
+
+
+@app.route("/api/workouts", methods=['POST'])
+def pft_mock_test_summary():
+    logged_exercises = [
+        {"id": "1", "name": "Pushups", "score": 17, "logged_value": "50", "unit": "rep"},
+        {"id": "2", "name": "Situps", "score": 18, "logged_value": "45", "unit": "rep"},
+        {"id": "3", "name": "1.5 Mile Run", "score": 48, "logged_value": "12:30", "unit": "pace"}
+    ]
+
+    best_scores = {"1": 18, "2": 19, "3": 52}
+    max_scores = {"1": 20, "2": 20, "3": 60}
+
+    summary = generate_test_summary("PFT", logged_exercises, best_scores, max_scores)
+
+    return json.dumps(summary, indent=2)
 
 
 @app.route('/api/introduction', methods=['GET'])
@@ -94,6 +117,54 @@ def get_introduction():
 @app.route('/api/results', methods=['GET'])
 def get_results():
     return jsonify(RESULTS_RESPONSE)
+
+
+def generate_test_summary(
+        test_type: str,
+        logged_exercises: List[Dict],
+        best_scores_lookup: Dict[str, float],
+        max_scores_lookup: Dict[str, float]
+) -> Dict:
+    composite_score = sum(ex["score"] for ex in logged_exercises)
+    best_score = sum(best_scores_lookup.get(ex["id"], 0) for ex in logged_exercises)
+
+    def get_status(score: float, max_score: float) -> str:
+        percentage = (score / max_score) * 100 if max_score > 0 else 0
+        if percentage >= 90:
+            return "Excellent"
+        elif percentage >= 75:
+            return "Good"
+        elif percentage >= 50:
+            return "Fair"
+        else:
+            return "Needs Improvement"
+
+    exercises_summary = []
+    for ex in logged_exercises:
+        ex_id = ex["id"]
+        score = ex["score"]
+        max_score = max_scores_lookup.get(ex_id, 0)
+        best_score_ex = best_scores_lookup.get(ex_id, 0)
+
+        exercises_summary.append({
+            "id": ex_id,
+            "name": ex["name"],
+            "score": score,
+            "best_score": best_score_ex,
+            "max_score": max_score,
+            "logged_value": ex["logged_value"],
+            "unit": ex["unit"],
+            "status": get_status(score, max_score)
+        })
+
+    return {
+        "test_date": str(date.today()),
+        "test_type": test_type,
+        "best_score": best_score,
+        "composite_score": composite_score,
+        "composite_status": get_status(composite_score, sum(max_scores_lookup.values())),
+        "exercises": exercises_summary
+    }
 
 
 if __name__ == '__main__':
