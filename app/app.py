@@ -70,7 +70,7 @@ def get_response():
         return jsonify({"action": {"jump": {"item_id": "1004"}}})
     elif item_id == "1004":
         # For item 1004, return "results" action
-        return jsonify(ACTIONS["mark_completed"])
+        return jsonify(ACTIONS["results"])
     else:
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
