@@ -260,93 +260,97 @@ ACTIONS = {
     "jump": {"action": {"jump": {"item_id": "-1"}}},
     "mark_completed": {"action": {"mark_completed": {}}},
     "results": {
-        "details": {
-            "bradburn": {
-                "score": -4,
-                "trend": [
+        "action": {
+            "results": {
+                "details": {
+                    "bradburn": {
+                        "score": -4,
+                        "trend": [
+                            {
+                                "label": "Jan",
+                                "score": 3
+                            },
+                            {
+                                "label": "Feb",
+                                "score": 0
+                            },
+                            {
+                                "label": "Mar",
+                                "score": -1
+                            },
+                            {
+                                "label": "Apr",
+                                "score": -4
+                            }
+                        ]
+                    }
+                },
+
+                "heading": [
                     {
-                        "label": "Jan",
-                        "score": 3
+                        "h1": {
+                            "text": "Your responses indicate a negative psychological wellbeing. That is concerning 😐."
+                        }
+                    }
+                ],
+                "meaning": [
+                    {
+                        "h2": {
+                            "text": "What does this mean?"
+                        }
                     },
                     {
-                        "label": "Feb",
-                        "score": 0
+                        "p": {
+                            "text": "A -4 score means you may be at risk to falling into depression, lowered self esteem, and self-harm."
+                        }
                     },
                     {
-                        "label": "Mar",
-                        "score": -1
+                        "p": {
+                            "text": "Your score is not cause for alarm but you may want to look for opportunities and get help building a positive wellbeing improvement plan."
+                        }
                     },
                     {
-                        "label": "Apr",
-                        "score": -4
+                        "button": {
+                            "style": "help",
+                            "title": "Contact the Psychological Health Resource Center for Help",
+                            "url": "https://projectrefuel.app"
+                        }
+                    }
+                ],
+                "scoring": [
+                    {
+                        "h2": {
+                            "text": "How is the score calculated?"
+                        }
+                    },
+                    {
+                        "p": {
+                            "text": "Questions 1-5 ask about positive emotions you are having. Each Yes adds one point. Questions 6-10 ask about negative emotions you might have. Each Yes response subtracts one point. Scores range from +5 to -5."
+                        }
+                    },
+                    {
+                        "button": {
+                            "style": "normal",
+                            "title": "Learn More About",
+                            "subtitle": "Refuel Mental Welbeing Checkin",
+                            "url": "https://projectrefuel.app"
+                        }
+                    }
+                ],
+                "save": [
+                    {
+                        "h2": {
+                            "text": "Save your results?"
+                        }
+                    },
+                    {
+                        "p": {
+                            "text": "As promised, we give you the option to save your results. Refuel's AI wellness engine will keep an eye on things and make suggestions to improve your mental wellbeing. Your results will be shared anonymously with your unit leader."
+                        }
                     }
                 ]
             }
-        },
-
-        "heading": [
-            {
-                "h1": {
-                    "text": "Your responses indicate a negative psychological wellbeing. That is concerning 😐."
-                }
-            }
-        ],
-        "meaning": [
-            {
-                "h2": {
-                    "text": "What does this mean?"
-                }
-            },
-            {
-                "p": {
-                    "text": "A -4 score means you may be at risk to falling into depression, lowered self esteem, and self-harm."
-                }
-            },
-            {
-                "p": {
-                    "text": "Your score is not cause for alarm but you may want to look for opportunities and get help building a positive wellbeing improvement plan."
-                }
-            },
-            {
-                "button": {
-                    "style": "help",
-                    "title": "Contact the Psychological Health Resource Center for Help",
-                    "url": "https://projectrefuel.app"
-                }
-            }
-        ],
-        "scoring": [
-            {
-                "h2": {
-                    "text": "How is the score calculated?"
-                }
-            },
-            {
-                "p": {
-                    "text": "Questions 1-5 ask about positive emotions you are having. Each Yes adds one point. Questions 6-10 ask about negative emotions you might have. Each Yes response subtracts one point. Scores range from +5 to -5."
-                }
-            },
-            {
-                "button": {
-                    "style": "normal",
-                    "title": "Learn More About",
-                    "subtitle": "Refuel Mental Welbeing Checkin",
-                    "url": "https://projectrefuel.app"
-                }
-            }
-        ],
-        "save": [
-            {
-                "h2": {
-                    "text": "Save your results?"
-                }
-            },
-            {
-                "p": {
-                    "text": "As promised, we give you the option to save your results. Refuel's AI wellness engine will keep an eye on things and make suggestions to improve your mental wellbeing. Your results will be shared anonymously with your unit leader."
-                }
-            }
-        ]
+        }
     }
 }
 
