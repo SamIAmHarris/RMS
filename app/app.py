@@ -96,9 +96,9 @@ def pft_mock_test():
 @app.route("/api/workouts", methods=['POST'])
 def pft_mock_test_summary():
     logged_exercises = [
-        {"id": "1", "name": "Pushups", "score": 17, "logged_value": "50", "unit": "rep"},
-        {"id": "2", "name": "Situps", "score": 18, "logged_value": "45", "unit": "rep"},
-        {"id": "3", "name": "1.5 Mile Run", "score": 48, "logged_value": "12:30", "unit": "pace"}
+        {"slot_id": "1", "exercise_id": "1", "name": "Pushups", "score": 17, "logged_value": "50", "unit": "rep"},
+        {"slot_id": "2", "exercise_id": "3", "name": "Situps", "score": 18, "logged_value": "45", "unit": "rep"},
+        {"slot_id": "3", "exercise_id": "7", "name": "1.5 Mile Run", "score": 48, "logged_value": "12:30", "unit": "pace"}
     ]
 
     best_scores = {"1": 18, "2": 19, "3": 52}
@@ -126,7 +126,7 @@ def generate_test_summary(
         max_scores_lookup: Dict[str, float]
 ) -> Dict:
     composite_score = sum(ex["score"] for ex in logged_exercises)
-    best_score = sum(best_scores_lookup.get(ex["id"], 0) for ex in logged_exercises)
+    best_score = sum(best_scores_lookup.get(ex["exercise_id"], 0) for ex in logged_exercises)
 
     def get_status(score: float, max_score: float) -> str:
         percentage = (score / max_score) * 100 if max_score > 0 else 0
@@ -141,13 +141,15 @@ def generate_test_summary(
 
     exercises_summary = []
     for ex in logged_exercises:
-        ex_id = ex["id"]
+        slot_id = ex["slot_id"]
+        ex_id = ex["exercise_id"]
         score = ex["score"]
         max_score = max_scores_lookup.get(ex_id, 0)
         best_score_ex = best_scores_lookup.get(ex_id, 0)
 
         exercises_summary.append({
-            "id": ex_id,
+            "slot_id": slot_id,
+            "exercise_id": ex_id,
             "name": ex["name"],
             "score": score,
             "best_score": best_score_ex,
@@ -163,7 +165,7 @@ def generate_test_summary(
         "best_score": best_score,
         "composite_score": composite_score,
         "composite_status": get_status(composite_score, sum(max_scores_lookup.values())),
-        "exercises": exercises_summary
+        "slots": exercises_summary
     }
 
 

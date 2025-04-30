@@ -515,46 +515,122 @@ PFT_TEST_RESPONSE = {
         "description": "PFT description",
         "programmed_exercises": [
             {
-                "exercise_id": "1",
-                "index": 0,
-                "name": "pushups",
-                "sets_data": {
-                    "prescribed_suffix": "sec",
-                    "loggable_suffix": "rep",
-                    "items": [
-                        {
-                            "prescribed_value": 60.0,
-                        },
-                    ]
-                }
-            },
-            {
-                "id": "2",
-                "index": 1,
-                "name": "situps",
-                "sets_data": {
-                    "prescribed_suffix": "sec",
-                    "loggable_suffix": "rep",
-                    "items": [
-                        {
-                            "prescribed_value": 60.0,
-                        },
-                    ],
-                }
-            },
-            {
-                "id": "3",
-                "index": 2,
-                "name": "run",
-                "sets_data": {
-                    "prescribed_suffix": "mi",
-                    "loggable_suffix": "pace",
-                    "items": [
-                        {
-                            "prescribed_value": 1.5,
+                "slot_id": 0,
+                "options": [
+                    {
+                        "exercise_id": "1",
+                        "name": "pushups",
+                        "sets_data": {
+                            "prescribed_suffix": "sec",
+                            "loggable_suffix": "rep",
+                            "items": [
+                                {
+                                    "prescribed_value": 60.0,
+                                },
+                            ]
                         }
-                    ]
-                }
+                    },
+                    {
+                        "exercise_id": "2",
+                        "name": "hand release pushups",
+                        "sets_data": {
+                            "prescribed_suffix": "sec",
+                            "loggable_suffix": "rep",
+                            "items": [
+                                {
+                                    "prescribed_value": 60.0,
+                                },
+                            ]
+                        }
+                    },
+                ],
+            }, {
+                "slot_id": "2",
+                "options": [
+                    {
+                        "exercise_id": "3",
+                        "name": "situps",
+                        "sets_data": {
+                            "prescribed_suffix": "sec",
+                            "loggable_suffix": "rep",
+                            "items": [
+                                {
+                                    "prescribed_value": 60.0,
+                                },
+                            ],
+                        }
+                    },
+                    {
+                        "exercise_id": "4",
+                        "name": "cross leg reverse crunch",
+                        "sets_data": {
+                            "prescribed_suffix": "sec",
+                            "loggable_suffix": "rep",
+                            "items": [
+                                {
+                                    "prescribed_value": 60.0,
+                                },
+                            ],
+                        }
+                    },
+                    {
+                        "exercise_id": "5",
+                        "name": "plank hold",
+                        "sets_data": {
+                            "prescribed_suffix": "sec",
+                            "loggable_suffix": "sec",
+                            "items": [
+                                {
+                                    "prescribed_value": 60.0,
+                                },
+                            ],
+                        }
+                    },
+                ]
+            },
+            {
+                "slot_id": "3",
+                "options": [
+                    {
+                        "exercise_id": "6",
+                        "name": "run",
+                        "sets_data": {
+                            "prescribed_suffix": "mi",
+                            "loggable_suffix": "pace",
+                            "items": [
+                                {
+                                    "prescribed_value": 1.5,
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "exercise_id": "7",
+                        "name": "hamr",
+                        "sets_data": {
+                            "prescribed_suffix": "sec",
+                            "loggable_suffix": "reps",
+                            "items": [
+                                {
+                                    "prescribed_value": 20,
+                                },
+                            ]
+                        }
+                    },
+                    {
+                        "exercise_id": "8",
+                        "name": "walk",
+                        "sets_data": {
+                            "prescribed_suffix": "k",
+                            "loggable_suffix": "pace",
+                            "items": [
+                                {
+                                    "prescribed_value": 2.0,
+                                }
+                            ]
+                        }
+                    },
+                ]
             }
         ],
     }
