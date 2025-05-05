@@ -3,7 +3,7 @@ import json
 from datetime import date
 from typing import List, Dict
 
-from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS,
+from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, CONSUME_PAGE_RESPONSE,
                   INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE)
 
 app = Flask(__name__)
@@ -18,6 +18,9 @@ def index():
 def get_assessment():
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
 
+@app.route('/api/consume_page', methods=['GET'])
+def get_consume_page():
+    return Response(json.dumps(CONSUME_PAGE_RESPONSE), mimetype='application/json')
 
 @app.route('/api/explore', methods=['GET'])
 def get_explore():
