@@ -852,212 +852,210 @@ VERTICAL_PAGE_RESPONSE = {
 }
 
 CONSUME_PAGE_RESPONSE = {
-    {
-        "consume_page": {
-            "consume_page_id": "mock-001",
+    "consume_page": {
+        "consume_page_id": "mock-001",
+        "focus_id": "resilience",
+        "title_full": "The Edge of Adaptation: an Activity Helping You Understand Who Knows What",
+        "title_short": "The Edge of Adaptation",
+        "title_image": "https://images.unsplash.com/photo-1519074031893-210d39bd3885?crop=entropy&cs=tinysrgb&[…]JjZXxlbnwwfHx8fDE3NDY2NjIwMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "preview": {
+            "kind": {
+                "consume_page": {}
+            },
+            "content_id": "mock-001",
             "focus_id": "resilience",
-            "title_full": "The Edge of Adaptation: an Activity Helping You Understand Who Knows What",
-            "title_short": "The Edge of Adaptation",
-            "title_image": "https://images.unsplash.com/photo-1519074031893-210d39bd3885?crop=entropy&cs=tinysrgb&[…]JjZXxlbnwwfHx8fDE3NDY2NjIwMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-            "preview": {
-                "kind": {
-                    "consume_page": {}
-                },
-                "content_id": "mock-001",
-                "focus_id": "resilience",
-                "duration": 7,
-                "units": "minute",
-                "title": "The Edge of Adaptation",
-                "subtitle": "Explore how you adapt under pressure.",
-                "template": "default",
-                "image": "https://images.unsplash.com/photo-1519074031893-210d39bd3885?crop=entropy&cs=tinysrgb&[…]JjZXxlbnwwfHx8fDE3NDY2NjIwMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-                "background_color": "#0055FF"
-            },
-            "progress": {
-                "section_id": "s2"
-            },
-            "sections": [
-                {
-                    "item_id": "s1",
-                    "markdown": "## Section 1: Pressure Points\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt commodo nisi.",
-                    "inputs": [
-                        {
-                            "type": "fixed",
-                            "item_id": "q1",
-                            "skippable": False,
-                            "prompt": "How do you typically respond to unexpected challenges?",
-                            "subtitle": "Select one option",
-                            "select": {
-                                "min": 1,
-                                "max": 1
-                            },
-                            "responses": [
-                                {
-                                    "response_id": "1",
-                                    "label": "Stay calm and assess",
-                                    "subtitle": "keep it calm",
-                                    "preview_text": "A steady mindset can be powerful."
-                                },
-                                {
-                                    "response_id": "2",
-                                    "label": "React immediately",
-                                    "subtitle": "quick quick",
-                                    "preview_text": "Quick thinking has its advantages."
-                                },
-                                {
-                                    "response_id": "3",
-                                    "label": "Panic and freeze",
-                                    "subtitle": "panic time",
-                                    "preview_text": "Recognizing this is the first step to improvement."
-                                }
-                            ]
+            "duration": 7,
+            "units": "minute",
+            "title": "The Edge of Adaptation",
+            "subtitle": "Explore how you adapt under pressure.",
+            "template": "default",
+            "image": "https://images.unsplash.com/photo-1519074031893-210d39bd3885?crop=entropy&cs=tinysrgb&[…]JjZXxlbnwwfHx8fDE3NDY2NjIwMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+            "background_color": "#0055FF"
+        },
+        "progress": {
+            "section_id": "s2"
+        },
+        "sections": [
+            {
+                "item_id": "s1",
+                "markdown": "## Section 1: Pressure Points\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt commodo nisi.",
+                "inputs": [
+                    {
+                        "type": "fixed",
+                        "item_id": "q1",
+                        "skippable": False,
+                        "prompt": "How do you typically respond to unexpected challenges?",
+                        "subtitle": "Select one option",
+                        "select": {
+                            "min": 1,
+                            "max": 1
                         },
-                        {
-                            "type": "scale",
-                            "item_id": "q2",
-                            "skippable": True,
-                            "prompt": "On a scale from 1–5, how in control do you feel in high-stress situations?",
-                            "subtitle": "Choose a place on the scale",
-                            "min": {
-                                "value": 1,
-                                "label": "Out of control",
-                                "emoji": "😰"
+                        "responses": [
+                            {
+                                "response_id": "1",
+                                "label": "Stay calm and assess",
+                                "subtitle": "keep it calm",
+                                "preview_text": "A steady mindset can be powerful."
                             },
-                            "max": {
-                                "value": 5,
-                                "label": "Completely in control",
-                                "emoji": "💪"
+                            {
+                                "response_id": "2",
+                                "label": "React immediately",
+                                "subtitle": "quick quick",
+                                "preview_text": "Quick thinking has its advantages."
                             },
-                            "preview_text": [
-                                "preview text 1",
-                                "preview text 2",
-                                "preview text 3",
-                                "preview text 4",
-                                "preview text 5"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "item_id": "s2",
-                    "markdown": "## Section 2: Inside the Storm\n\nInteger sed justo nec sapien dapibus rutrum nec sed erat.",
-                    "inputs": [
-                        {
-                            "type": "free",
-                            "item_id": "q3",
-                            "skippable": False,
-                            "prompt": "Describe a time when you had to quickly adjust to new information.",
-                            "subtitle": "Let it rip",
-                            "options": {
-                                "text": {
-                                    "characters": {
-                                        "min": 10,
-                                        "max": 500
-                                    }
-                                },
-                                "audio": {
-                                    "time": {
-                                        "max": 60
-                                    }
-                                }
+                            {
+                                "response_id": "3",
+                                "label": "Panic and freeze",
+                                "subtitle": "panic time",
+                                "preview_text": "Recognizing this is the first step to improvement."
                             }
+                        ]
+                    },
+                    {
+                        "type": "scale",
+                        "item_id": "q2",
+                        "skippable": True,
+                        "prompt": "On a scale from 1–5, how in control do you feel in high-stress situations?",
+                        "subtitle": "Choose a place on the scale",
+                        "min": {
+                            "value": 1,
+                            "label": "Out of control",
+                            "emoji": "😰"
                         },
-                        {
-                            "type": "fixed",
-                            "item_id": "q4",
-                            "skippable": True,
-                            "prompt": "Which of the following have helped you cope with stress recently? (Select all that apply)",
-                            "subtitle": "Select as many as you'd like",
-                            "select": {
-                                "min": 0,
-                                "max": 4
-                            },
-                            "responses": [
-                                {
-                                    "response_id": "1",
-                                    "label": "Exercise",
-                                    "subtitle": "keep it calm",
-                                    "preview_text": "sweat it out"
-                                },
-                                {
-                                    "response_id": "2",
-                                    "label": "Talking to someone",
-                                    "subtitle": "keep it talkative",
-                                    "preview_text": "talk it out"
-                                },
-                                {
-                                    "response_id": "3",
-                                    "label": "Meditation",
-                                    "subtitle": "keep it breathable",
-                                    "preview_text": "breathe it out"
-                                },
-                                {
-                                    "response_id": "4",
-                                    "label": "Distraction (TV, games, etc.)",
-                                    "subtitle": "keep it distractable",
-                                    "preview_text": "distract it out"
+                        "max": {
+                            "value": 5,
+                            "label": "Completely in control",
+                            "emoji": "💪"
+                        },
+                        "preview_text": [
+                            "preview text 1",
+                            "preview text 2",
+                            "preview text 3",
+                            "preview text 4",
+                            "preview text 5"
+                        ]
+                    }
+                ]
+            },
+            {
+                "item_id": "s2",
+                "markdown": "## Section 2: Inside the Storm\n\nInteger sed justo nec sapien dapibus rutrum nec sed erat.",
+                "inputs": [
+                    {
+                        "type": "free",
+                        "item_id": "q3",
+                        "skippable": False,
+                        "prompt": "Describe a time when you had to quickly adjust to new information.",
+                        "subtitle": "Let it rip",
+                        "options": {
+                            "text": {
+                                "characters": {
+                                    "min": 10,
+                                    "max": 500
                                 }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "item_id": "s3",
-                    "markdown": "## Section 3: Reflective Space\n\nSuspendisse potenti. Aenean eu blandit odio.",
-                    "inputs": [
-                        {
-                            "type": "scale",
-                            "item_id": "q5",
-                            "skippable": False,
-                            "prompt": "How much clarity do you feel about your current priorities?",
-                            "subtitle": "Choose an option on the scale",
-                            "min": {
-                                "value": 1,
-                                "label": "Not clear",
-                                "emoji": "🤷"
                             },
-                            "max": {
-                                "value": 5,
-                                "label": "Crystal clear",
-                                "emoji": "🔍"
-                            },
-                            "preview_text": [
-                                "preview text 1",
-                                "preview text 2",
-                                "preview text 3",
-                                "preview text 4",
-                                "preview text 5"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "item_id": "s4",
-                    "markdown": "## Section 4: Final Thought\n\nCurabitur vel ipsum eu tortor laoreet aliquet.",
-                    "inputs": [
-                        {
-                            "type": "free",
-                            "item_id": "q6",
-                            "skippable": True,
-                            "prompt": "What would you like to change about how you handle pressure?",
-                            "subtitle": "Let it rip",
-                            "options": {
-                                "text": {
-                                    "characters": {
-                                        "min": 5,
-                                        "max": 300
-                                    }
-                                },
-                                "audio": {
-                                    "time": {
-                                        "max": 45
-                                    }
+                            "audio": {
+                                "time": {
+                                    "max": 60
                                 }
                             }
                         }
-                    ]
-                }
-            ]
-        }
+                    },
+                    {
+                        "type": "fixed",
+                        "item_id": "q4",
+                        "skippable": True,
+                        "prompt": "Which of the following have helped you cope with stress recently? (Select all that apply)",
+                        "subtitle": "Select as many as you'd like",
+                        "select": {
+                            "min": 0,
+                            "max": 4
+                        },
+                        "responses": [
+                            {
+                                "response_id": "1",
+                                "label": "Exercise",
+                                "subtitle": "keep it calm",
+                                "preview_text": "sweat it out"
+                            },
+                            {
+                                "response_id": "2",
+                                "label": "Talking to someone",
+                                "subtitle": "keep it talkative",
+                                "preview_text": "talk it out"
+                            },
+                            {
+                                "response_id": "3",
+                                "label": "Meditation",
+                                "subtitle": "keep it breathable",
+                                "preview_text": "breathe it out"
+                            },
+                            {
+                                "response_id": "4",
+                                "label": "Distraction (TV, games, etc.)",
+                                "subtitle": "keep it distractable",
+                                "preview_text": "distract it out"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "item_id": "s3",
+                "markdown": "## Section 3: Reflective Space\n\nSuspendisse potenti. Aenean eu blandit odio.",
+                "inputs": [
+                    {
+                        "type": "scale",
+                        "item_id": "q5",
+                        "skippable": False,
+                        "prompt": "How much clarity do you feel about your current priorities?",
+                        "subtitle": "Choose an option on the scale",
+                        "min": {
+                            "value": 1,
+                            "label": "Not clear",
+                            "emoji": "🤷"
+                        },
+                        "max": {
+                            "value": 5,
+                            "label": "Crystal clear",
+                            "emoji": "🔍"
+                        },
+                        "preview_text": [
+                            "preview text 1",
+                            "preview text 2",
+                            "preview text 3",
+                            "preview text 4",
+                            "preview text 5"
+                        ]
+                    }
+                ]
+            },
+            {
+                "item_id": "s4",
+                "markdown": "## Section 4: Final Thought\n\nCurabitur vel ipsum eu tortor laoreet aliquet.",
+                "inputs": [
+                    {
+                        "type": "free",
+                        "item_id": "q6",
+                        "skippable": True,
+                        "prompt": "What would you like to change about how you handle pressure?",
+                        "subtitle": "Let it rip",
+                        "options": {
+                            "text": {
+                                "characters": {
+                                    "min": 5,
+                                    "max": 300
+                                }
+                            },
+                            "audio": {
+                                "time": {
+                                    "max": 45
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
     }
 }
