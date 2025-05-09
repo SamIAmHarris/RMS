@@ -884,7 +884,7 @@ CONSUME_PAGE_RESPONSE = {
                         {
                             "type": "fixed",
                             "item_id": "q1",
-                            "skippable": false,
+                            "skippable": False,
                             "prompt": "How do you typically respond to unexpected challenges?",
                             "subtitle": "Select one option",
                             "select": {
@@ -915,7 +915,7 @@ CONSUME_PAGE_RESPONSE = {
                         {
                             "type": "scale",
                             "item_id": "q2",
-                            "skippable": true,
+                            "skippable": True,
                             "prompt": "On a scale from 1–5, how in control do you feel in high-stress situations?",
                             "subtitle": "Choose a place on the scale",
                             "min": {
@@ -945,7 +945,7 @@ CONSUME_PAGE_RESPONSE = {
                         {
                             "type": "free",
                             "item_id": "q3",
-                            "skippable": false,
+                            "skippable": False,
                             "prompt": "Describe a time when you had to quickly adjust to new information.",
                             "subtitle": "Let it rip",
                             "options": {
@@ -965,7 +965,7 @@ CONSUME_PAGE_RESPONSE = {
                         {
                             "type": "fixed",
                             "item_id": "q4",
-                            "skippable": true,
+                            "skippable": True,
                             "prompt": "Which of the following have helped you cope with stress recently? (Select all that apply)",
                             "subtitle": "Select as many as you'd like",
                             "select": {
@@ -1008,7 +1008,7 @@ CONSUME_PAGE_RESPONSE = {
                         {
                             "type": "scale",
                             "item_id": "q5",
-                            "skippable": false,
+                            "skippable": False,
                             "prompt": "How much clarity do you feel about your current priorities?",
                             "subtitle": "Choose an option on the scale",
                             "min": {
@@ -1038,7 +1038,7 @@ CONSUME_PAGE_RESPONSE = {
                         {
                             "type": "free",
                             "item_id": "q6",
-                            "skippable": true,
+                            "skippable": True,
                             "prompt": "What would you like to change about how you handle pressure?",
                             "subtitle": "Let it rip",
                             "options": {
