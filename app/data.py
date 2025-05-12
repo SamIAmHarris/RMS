@@ -878,7 +878,7 @@ CONSUME_PAGE_RESPONSE = {
         "sections": [
             {
                 "item_id": "s1",
-                "markdown": "## Section 1: Pressure Points\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt commodo nisi.",
+                "markdown": "## Section 1: Pressure Points\n\n**Understanding Your Default Reaction to Stress**\n\n> _\"The pressure you feel is not from the situation itself, but from your perception of it.\"_\n\nWhen the unexpected hits, how do you react? Some go calm and quiet. Others leap into action. And a few... simply freeze. These responses aren't right or wrong—they're clues to how you process change.\n\n---\n\n### \ud83d\udd0d What Pressure Can Reveal\n- **Fight**: Charging into action, sometimes prematurely\n- **Flight**: Avoiding or deflecting responsibility\n- **Freeze**: Stalled, overwhelmed by possibilities\n- **Flow**: Calm, aware, and navigating intentionally\n\n#### \ud83d\udcac Real Talk\n> *\"When I was put on the spot last week, I panicked at first... but then remembered to breathe.\"* — anonymous contributor\n\n---\n\n### \ud83e\udde9 Exploration Prompts\n1. Recall the last high-pressure moment.\n2. What physical sensations did you notice?\n3. Did you lean on logic or instinct?\n4. How did others perceive your response?\n\n---\n\n### \ud83d\udca1 Tip Box\n**Practice makes presence.**  \nRehearsing scenarios mentally can make your future responses more fluid.\n\n---\n\n### \ud83d\udd9a Wrapping Up\nKnowing your pressure response helps you reframe it. Next time you're tested—observe. Don't judge. Awareness is the beginning of resilience.",
                 "inputs": [
                     {
                         "type": "fixed",
@@ -939,7 +939,7 @@ CONSUME_PAGE_RESPONSE = {
             },
             {
                 "item_id": "s2",
-                "markdown": "## Section 2: Inside the Storm\n\nInteger sed justo nec sapien dapibus rutrum nec sed erat.",
+                "markdown": "## Section 2: Inside the Storm\n\n**The Chaos Within: Can You Stay Centered?**\n\n> _\"Storms make trees take deeper roots.\"_ — Dolly Parton\n\nThis section is about learning to adapt when your environment spins out of control. Think of it as mental jiu-jitsu: not resisting force, but using it.\n\n---\n\n### \ud83c\udf2a\ufe0f What Storms Teach Us\n- **Chaos is natural**: Plans unravel.\n- **Discomfort is data**: Stress reveals blindspots.\n- **Adaptation is a skill**: Not a gift, but a learned response.\n- **Awareness is a choice**: You can choose to observe instead of react.\n- **Grounding techniques work**: They center you, fast.\n\n---\n\n### \ud83d\udd0d Deep Dive: Types of Adaptive Thinking\n#### \ud83e\udde0 Reactive Thinkers\n- Solve immediate problems\n- Quick on their feet, but may overlook details\n- Prone to snap decisions\n- Often excellent in crises, but need follow-up\n\n#### \ud83d\udcad Reflective Thinkers\n- Pause and evaluate\n- May appear slow, but often get to better outcomes\n- Use hindsight and foresight together\n- Especially good in long-term planning\n\n---\n\n### \ud83c\udf27\ufe0f Mental Weather Report\n- Identify today’s dominant emotion\n- Forecast how it might evolve\n- Prepare a mental umbrella (support, tools, mindset)\n\n---\n\n### \ud83d\udccc Exercises to Try\n- **Write** about a recent pivot point.\n- **Visualize** your internal ‘weather map’. Is it stormy or clear?\n- **Breathe** in for 4, hold for 4, out for 6. Repeat until grounded.\n- **Speak aloud** your current state without judgment.\n- **Stand up** and stretch. Physical movement helps emotional clarity.\n\n---\n\n> *\"Adaptability is not about knowing what will happen. It's about being ready to respond when it does.\"*\n\n---\n\n### \ud83e\uddf0 Coping Toolbox\n- \ud83c\udfc3 Exercise\n- \ud83e\uddd8 Meditation\n- \ud83d\udc64 Talking it out\n- \ud83c\udfae Healthy distractions\n- \ud83d\udcdd Journaling your responses\n- \ud83c\udf0a Time in nature\n- \ud83d\udcfa Silence/low stimulation\n\n---\n\n### \ud83d\udea8 Bonus Challenge\nReframe the next stressor that hits you: Instead of\"Why is this happening to me?\"Try\"What is this teaching me?\"\n\nReflect, ground, adapt. You’ve got this.",
                 "inputs": [
                     {
                         "type": "free",
@@ -1002,7 +1002,7 @@ CONSUME_PAGE_RESPONSE = {
             },
             {
                 "item_id": "s3",
-                "markdown": "## Section 3: Reflective Space\n\nSuspendisse potenti. Aenean eu blandit odio.",
+                "markdown": "## Section 3: Reflective Space\n\n**Inner Compass: Where Are You Pointing?**\n\nClarity isn’t a luxury—it’s a necessity.\n\nWhat matters now?\n\nThink briefly. Move forward mindfully.",
                 "inputs": [
                     {
                         "type": "scale",
@@ -1032,7 +1032,7 @@ CONSUME_PAGE_RESPONSE = {
             },
             {
                 "item_id": "s4",
-                "markdown": "## Section 4: Final Thought\n\nCurabitur vel ipsum eu tortor laoreet aliquet.",
+                "markdown": "## Section 4: Final Thought\n\n**The Pressure Reset Button**\n\n> _\u201cBetween the stimulus and the response, there is a space...\u201d_ — Viktor Frankl\n\nYou've explored how you respond to pressure. You've identified coping tools and reflected on clarity. Now: what's one thing you'll do differently?\n\n---\n\n### \ud83c\udf1f Reset Goals\n**What do you want to change?**\n- Less reactivity, more intention?\n- Deeper breath before responding?\n- Healthier self-talk?\n\n---\n\n### \ud83d\uddfd Create a North Star Phrase\n> *\"In pressure, I choose... [calm/clarity/focus/strength]\"*\n\nWrite your own mantra and repeat it next time your blood pressure spikes.\n\n---\n\n### \ud83d\udd04 Loop it Forward\n#### Next time you feel pressure:\n1. Pause for 5 seconds.\n2. Notice where tension lives in your body.\n3. Recall this activity—and your growth.\n\n---\n\n### \ud83e\udd28 Bonus Exercise\n#### \u201cMy New Response Plan\u201d\n- When pressure hits, I will...\n- I will remind myself that...\n- I’ll reach out to...\n\n---\n\n### \ud83d\udcac Final Prompt\n> *\"When pressure builds, I want to become the kind of person who...\"*\n\n---\n\n### \ud83d\udca1 Remember\n**Growth doesn’t happen at the edge of ease. It happens at the edge of adaptation.**  \nThank you for walking to that edge today.",
                 "inputs": [
                     {
                         "type": "free",
