@@ -1059,3 +1059,397 @@ CONSUME_PAGE_RESPONSE = {
         ]
     }
 }
+
+TODAY_PAGE_RESPONSE = {
+    "today": {
+        "date": "2025-05-16",
+        "greeting": {
+            "text": "Let’s end your day strong, Josh.",
+            "supporting_text": "You’ve been sticking to your afternoon routine — nice work. Keep it up!"
+        },
+        "top_content": [
+            {
+                "preview": {
+                    "kind": {
+                        "assessment": {
+                            "assessment": {
+                                "assessment_id": "2000",
+                                "items": [
+                                    {
+                                        "fixed": {
+                                            "item_id": "1",
+                                            "select": {
+                                                "min": 1,
+                                                "max": 6
+                                            },
+                                            "prompt": "Over the last 7 days, how do you feel about your sleep?",
+                                            "responses": [
+                                                {
+                                                    "response_id": "1",
+                                                    "label": "Tired"
+                                                },
+                                                {
+                                                    "response_id": "2",
+                                                    "label": "Well Rested"
+                                                },
+                                                {
+                                                    "response_id": "3",
+                                                    "label": "Worn Out"
+                                                },
+                                                {
+                                                    "response_id": "4",
+                                                    "label": "Energized"
+                                                },
+                                                {
+                                                    "response_id": "5",
+                                                    "label": "Groggy"
+                                                },
+                                                {
+                                                    "response_id": "6",
+                                                    "label": "Satisfied"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "fixed": {
+                                            "item_id": "2",
+                                            "select": {
+                                                "min": 1,
+                                                "max": 1
+                                            },
+                                            "prompt": "On average, how many hours of sleep are you getting each night?",
+                                            "responses": [
+                                                {
+                                                    "response_id": "1",
+                                                    "label": "8+"
+                                                },
+                                                {
+                                                    "response_id": "2",
+                                                    "label": "5-7"
+                                                },
+                                                {
+                                                    "response_id": "3",
+                                                    "label": "3-4"
+                                                },
+                                                {
+                                                    "response_id": "4",
+                                                    "label": "1-2"
+                                                },
+                                                {
+                                                    "response_id": "5",
+                                                    "label": "None"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "free": {
+                                            "item_id": "1001",
+                                            "prompt": "What things keep you from getting a good night sleep?",
+                                            "options": {
+                                                "text": {
+                                                    "characters": {
+                                                        "min": 2,
+                                                        "max": 500
+                                                    }
+                                                },
+                                                "audio": {
+                                                    "time": {
+                                                        "max": 60
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "scale": {
+                                            "item_id": "1004",
+                                            "prompt": "On a scale of 1–5, how would you rate your energy levels?",
+                                            "min": {
+                                                "value": 1,
+                                                "label": "normal",
+                                                "emoji": "😀"
+                                            },
+                                            "max": {
+                                                "value": 5,
+                                                "label": "low",
+                                                "emoji": "😴"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "content_id": "1004",
+                    "duration": 5,
+                    "units": "minute",
+                    "template": "story_card_inline",
+                    "title": "Let's end your day strong, Josh.",
+                    "subtitle": "You've been sticking to your afternoon routine - nice work. Keep it up!",
+                    "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
+                    "background_color": "#007AFF"
+                }
+            },
+            {
+                "preview": {
+                    "kind": {
+                        "assessment": {
+                            "assessment": {
+                                "assessment_id": "2001",
+                                "items": [
+                                    {
+                                        "fixed": {
+                                            "item_id": "10",
+                                            "select": {
+                                                "min": 1,
+                                                "max": 1
+                                            },
+                                            "prompt": "Have you taken time to relax today?",
+                                            "responses": [
+                                                {
+                                                    "response_id": "1",
+                                                    "label": "Yes"
+                                                },
+                                                {
+                                                    "response_id": "2",
+                                                    "label": "No"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "scale": {
+                                            "item_id": "11",
+                                            "prompt": "Rate today's stress (1–5)",
+                                            "min": {
+                                                "value": 1,
+                                                "label": "Calm",
+                                                "emoji": "🧘"
+                                            },
+                                            "max": {
+                                                "value": 5,
+                                                "label": "Stressed",
+                                                "emoji": "😫"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "content_id": "1005",
+                    "duration": 3,
+                    "units": "minute",
+                    "template": "story_card_inline",
+                    "title": "End Your Day Strong:",
+                    "subtitle": "Before the day ends, take a moment to recognize something you did well -- big or small.",
+                    "image": "",
+                    "background_color": ""
+                }
+            },
+            {
+                "preview": {
+                    "kind": {
+                        "assessment": {}
+                    },
+                    "content_id": "1006",
+                    "duration": 5,
+                    "units": "minute",
+                    "template": "story_card",
+                    "title": "How was your workout yesterday?",
+                    "subtitle": "Give us some feedback in order to get better insights for the week.",
+                    "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
+                    "background_color": "#007AFF",
+                    "cta": "Start Check-in"
+                }
+            },
+            {
+                "preview": {
+                    "kind": {
+                        "journal": {}
+                    },
+                    "content_id": "1010",
+                    "duration": 2,
+                    "units": "minute",
+                    "title": "Journal today, you are on a 4 day streak, keep up the good work.",
+                    "subtitle": "Start a chat here...",
+                    "cta": "Start Check-in",
+                    "image": "",
+                    "background_color": "#FFEEDD"
+                }
+            }
+        ],
+        "bottom_content": [
+            {
+                "title": "Morning Routine",
+                "subtitle": "Start with focus and calm",
+                "expanded": true,
+                "progress_label": "1 of 3 completed",
+                "items": [
+                    {
+                        "template": "task_item",
+                        "status": "completed",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3001",
+                            "duration": 3,
+                            "units": "minute",
+                            "title": "Morning Momentum",
+                            "subtitle": "How to prime your mindset before the day begins",
+                            "image": "https://refuelapp-dev.web.app/icons/sunrise.png",
+                            "background_color": "#FFF3E0"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3002",
+                            "duration": 2,
+                            "units": "minute",
+                            "title": "Drink Water First",
+                            "subtitle": "Rehydration boosts focus and mood.",
+                            "image": "https://refuelapp-dev.web.app/icons/water-drop.png",
+                            "background_color": "#E0F7FA"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3003",
+                            "duration": 1,
+                            "units": "minute",
+                            "title": "Stretch and Wake Up",
+                            "subtitle": "Gentle morning movement to open the day",
+                            "image": "https://refuelapp-dev.web.app/icons/stretch.png",
+                            "background_color": "#FFFDE7"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Midday Reset",
+                "subtitle": "Boost energy and intention",
+                "expanded": false,
+                "progress_label": "1 of 3 completed",
+                "items": [
+                    {
+                        "template": "task_item",
+                        "status": "in-progress",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3101",
+                            "duration": 4,
+                            "units": "minute",
+                            "title": "Take a Breath Break",
+                            "subtitle": "Reset your nervous system with deep breathing",
+                            "image": "https://refuelapp-dev.web.app/icons/breath.png",
+                            "background_color": "#E8F5E9"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "completed",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3102",
+                            "duration": 3,
+                            "units": "minute",
+                            "title": "Midday Movement",
+                            "subtitle": "Gentle stretch or walk to reenergize",
+                            "image": "https://refuelapp-dev.web.app/icons/walk.png",
+                            "background_color": "#E0F2F1"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3103",
+                            "duration": 2,
+                            "units": "minute",
+                            "title": "Mindful Moment",
+                            "subtitle": "A two-minute mental reset for clarity",
+                            "image": "https://refuelapp-dev.web.app/icons/mindful.png",
+                            "background_color": "#FFF8E1"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Evening Wind-Down",
+                "subtitle": "Reflect and recharge",
+                "expanded": true,
+                "progress_label": "0 of 3 completed",
+                "items": [
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3201",
+                            "duration": 5,
+                            "units": "minute",
+                            "title": "Sleep Prep: Unplug",
+                            "subtitle": "Digital detox tips for better sleep",
+                            "image": "https://refuelapp-dev.web.app/icons/moon.png",
+                            "background_color": "#E3F2FD"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3202",
+                            "duration": 3,
+                            "units": "minute",
+                            "title": "Evening Gratitude",
+                            "subtitle": "Reflect on something good from your day",
+                            "image": "https://refuelapp-dev.web.app/icons/gratitude.png",
+                            "background_color": "#F3E5F5"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3203",
+                            "duration": 2,
+                            "units": "minute",
+                            "title": "Read Something Inspiring",
+                            "subtitle": "Wind down with uplifting thoughts",
+                            "image": "https://refuelapp-dev.web.app/icons/book.png",
+                            "background_color": "#F1F8E9"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

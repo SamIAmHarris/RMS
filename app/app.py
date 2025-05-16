@@ -3,6 +3,7 @@ import json
 from datetime import date
 from typing import List, Dict
 
+from app.data import TODAY_PAGE_RESPONSE
 from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, CONSUME_PAGE_RESPONSE,
                   INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE)
 
@@ -26,6 +27,9 @@ def get_consume_page():
 def get_explore():
     return Response(json.dumps(EXPLORE_RESPONSE), mimetype='application/json')
 
+@app.route('/api/today', methods=['GET'])
+def get_today():
+    return Response(json.dumps(TODAY_PAGE_RESPONSE), mimetype='application/json')
 
 @app.route('/api/action', methods=['GET'])
 def get_action():
