@@ -1285,7 +1285,7 @@ TODAY_PAGE_RESPONSE = {
             {
                 "title": "Morning Routine",
                 "subtitle": "Start with focus and calm",
-                "expanded": true,
+                "expanded": True,
                 "progress_label": "1 of 3 completed",
                 "items": [
                     {
@@ -1341,7 +1341,7 @@ TODAY_PAGE_RESPONSE = {
             {
                 "title": "Midday Reset",
                 "subtitle": "Boost energy and intention",
-                "expanded": false,
+                "expanded": False,
                 "progress_label": "1 of 3 completed",
                 "items": [
                     {
@@ -1397,7 +1397,7 @@ TODAY_PAGE_RESPONSE = {
             {
                 "title": "Evening Wind-Down",
                 "subtitle": "Reflect and recharge",
-                "expanded": true,
+                "expanded": True,
                 "progress_label": "0 of 3 completed",
                 "items": [
                     {
