@@ -1189,7 +1189,8 @@ TODAY_PAGE_RESPONSE = {
                     "title": "Let's end your day strong, Josh.",
                     "subtitle": "You've been sticking to your afternoon routine - nice work. Keep it up!",
                     "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
-                    "background_color": "#007AFF"
+                    "background_color": "#007AFF",
+                    "cta":""
                 }
             },
             {
@@ -1243,9 +1244,10 @@ TODAY_PAGE_RESPONSE = {
                     "duration": 3,
                     "units": "minute",
                     "template": "story_card_inline",
-                    "title": "End Your Day Strong:",
+                    "title": "End your day Strong:",
                     "subtitle": "Before the day ends, take a moment to recognize something you did well -- big or small.",
                     "image": "",
+                    "cta": "",
                     "background_color": ""
                 }
             },
@@ -1272,10 +1274,11 @@ TODAY_PAGE_RESPONSE = {
                     },
                     "content_id": "1010",
                     "duration": 2,
+                    "template": "story_card",
                     "units": "minute",
                     "title": "Journal today, you are on a 4 day streak, keep up the good work.",
                     "subtitle": "Start a chat here...",
-                    "cta": "Start Check-in",
+                    "cta": "Start a conversation here...",
                     "image": "",
                     "background_color": "#FFEEDD"
                 }
