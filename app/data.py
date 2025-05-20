@@ -1294,6 +1294,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "completed",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1310,6 +1311,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "incomplete",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1326,6 +1328,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "incomplete",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1350,6 +1353,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "in-progress",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1366,6 +1370,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "completed",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1381,7 +1386,8 @@ TODAY_PAGE_RESPONSE = {
                     },
                     {
                         "template": "task_item",
-                        "status": "incomplete",
+                        "status": "in-progress",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1405,7 +1411,8 @@ TODAY_PAGE_RESPONSE = {
                 "items": [
                     {
                         "template": "task_item",
-                        "status": "incomplete",
+                        "status": "complete",
+                        "bookmarked": True,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1422,6 +1429,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "incomplete",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1438,6 +1446,7 @@ TODAY_PAGE_RESPONSE = {
                     {
                         "template": "task_item",
                         "status": "incomplete",
+                        "bookmarked": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
