@@ -1288,6 +1288,7 @@ TODAY_PAGE_RESPONSE = {
             {
                 "title": "Morning Routine",
                 "subtitle": "Start with focus and calm",
+                "section_id": "0",
                 "expanded": True,
                 "progress_label": "1 of 3 completed",
                 "items": [
@@ -1295,6 +1296,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "completed",
                         "bookmarked": False,
+                        "index": 0,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1312,6 +1314,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "index": 1,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1329,6 +1332,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "index": 2,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1347,12 +1351,14 @@ TODAY_PAGE_RESPONSE = {
             {
                 "title": "Midday Reset",
                 "subtitle": "Boost energy and intention",
+                "section_id": "1",
                 "expanded": False,
                 "progress_label": "1 of 3 completed",
                 "items": [
                     {
                         "template": "task_item",
                         "status": "in-progress",
+                        "index": 0,
                         "bookmarked": False,
                         "preview": {
                             "kind": {
@@ -1371,6 +1377,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "completed",
                         "bookmarked": False,
+                        "index": 1,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1388,6 +1395,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "in-progress",
                         "bookmarked": False,
+                        "index": 2,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1406,6 +1414,7 @@ TODAY_PAGE_RESPONSE = {
             {
                 "title": "Evening Wind-Down",
                 "subtitle": "Reflect and recharge",
+                "section_id": "2",
                 "expanded": True,
                 "progress_label": "0 of 3 completed",
                 "items": [
@@ -1413,6 +1422,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "complete",
                         "bookmarked": True,
+                        "index": 0,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1430,6 +1440,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "index": 1,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1447,6 +1458,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "index": 2,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
