@@ -1306,7 +1306,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Morning Momentum",
                             "subtitle": "How to prime your mindset before the day begins",
-                            "image": "https://refuelapp-dev.web.app/icons/sunrise.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#FFF3E0"
                         }
                     },
@@ -1324,7 +1324,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Drink Water First",
                             "subtitle": "Rehydration boosts focus and mood.",
-                            "image": "https://refuelapp-dev.web.app/icons/water-drop.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E0F7FA"
                         }
                     },
@@ -1342,7 +1342,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Stretch and Wake Up",
                             "subtitle": "Gentle morning movement to open the day",
-                            "image": "https://refuelapp-dev.web.app/icons/stretch.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#FFFDE7"
                         }
                     }
@@ -1369,7 +1369,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Take a Breath Break",
                             "subtitle": "Reset your nervous system with deep breathing",
-                            "image": "https://refuelapp-dev.web.app/icons/breath.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E8F5E9"
                         }
                     },
@@ -1387,7 +1387,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Midday Movement",
                             "subtitle": "Gentle stretch or walk to reenergize",
-                            "image": "https://refuelapp-dev.web.app/icons/walk.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E0F2F1"
                         }
                     },
@@ -1405,7 +1405,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Mindful Moment",
                             "subtitle": "A two-minute mental reset for clarity",
-                            "image": "https://refuelapp-dev.web.app/icons/mindful.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#FFF8E1"
                         }
                     }
@@ -1432,7 +1432,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Sleep Prep: Unplug",
                             "subtitle": "Digital detox tips for better sleep",
-                            "image": "https://refuelapp-dev.web.app/icons/moon.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E3F2FD"
                         }
                     },
@@ -1450,7 +1450,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Evening Gratitude",
                             "subtitle": "Reflect on something good from your day",
-                            "image": "https://refuelapp-dev.web.app/icons/gratitude.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#F3E5F5"
                         }
                     },
@@ -1468,7 +1468,7 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Read Something Inspiring",
                             "subtitle": "Wind down with uplifting thoughts",
-                            "image": "https://refuelapp-dev.web.app/icons/book.png",
+                            "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#F1F8E9"
                         }
                     }
