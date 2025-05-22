@@ -1290,7 +1290,7 @@ TODAY_PAGE_RESPONSE = {
                 "subtitle": "Start with focus and calm",
                 "section_id": "0",
                 "expanded": True,
-                "icon": "https://api.iconify.design/mdi/home.svg",
+                "icon": "https://api.iconify.design/mdi/check.svg",
                 "progress_label": "1 of 3 completed",
                 "items": [
                     {
@@ -1354,7 +1354,7 @@ TODAY_PAGE_RESPONSE = {
                 "subtitle": "Boost energy and intention",
                 "section_id": "1",
                 "expanded": False,
-                "icon": "https://api.iconify.design/mdi/home.svg",
+                "icon": "https://api.iconify.design/mdi/menu.svg",
                 "progress_label": "1 of 3 completed",
                 "items": [
                     {
@@ -1418,7 +1418,7 @@ TODAY_PAGE_RESPONSE = {
                 "subtitle": "Reflect and recharge",
                 "section_id": "2",
                 "expanded": True,
-                "icon": "https://api.iconify.design/mdi/home.svg",
+                "icon": "https://api.iconify.design/mdi/cloud.svg",
                 "progress_label": "0 of 3 completed",
                 "items": [
                     {
