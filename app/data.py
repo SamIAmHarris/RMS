@@ -1062,7 +1062,7 @@ CONSUME_PAGE_RESPONSE = {
 
 TODAY_PAGE_RESPONSE = {
     "today": {
-        "date": "2025-05-16",
+        "date": "2025-05-28",
         "greeting": {
             "text": "Let’s end your day strong, Josh.",
             "supporting_text": "You’ve been sticking to your afternoon routine — nice work. Keep it up!"
@@ -1190,7 +1190,7 @@ TODAY_PAGE_RESPONSE = {
                     "subtitle": "You've been sticking to your afternoon routine - nice work. Keep it up!",
                     "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
                     "background_color": "#007AFF",
-                    "cta":""
+                    "cta": ""
                 }
             },
             {
@@ -1480,6 +1480,436 @@ TODAY_PAGE_RESPONSE = {
                             "units": "minute",
                             "title": "Read Something Inspiring",
                             "subtitle": "Wind down with uplifting thoughts",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#F1F8E9"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+REFRESH_TODAY_PAGE_RESPONSE = {
+    "today": {
+        "date": "2025-05-28",
+        "greeting": {
+            "text": "Let’s end your day strong, Josh.",
+            "supporting_text": "You’ve been sticking to your afternoon routine — nice work. Keep it up!"
+        },
+        "top_content": [
+            {
+                "preview": {
+                    "kind": {
+                        "assessment": {
+                            "assessment": {
+                                "assessment_id": "2000",
+                                "items": [
+                                    {
+                                        "fixed": {
+                                            "item_id": "1",
+                                            "select": {
+                                                "min": 1,
+                                                "max": 6
+                                            },
+                                            "prompt": "Over the last 7 days, how do you feel about your sleep?",
+                                            "responses": [
+                                                {
+                                                    "response_id": "1",
+                                                    "label": "Tired"
+                                                },
+                                                {
+                                                    "response_id": "2",
+                                                    "label": "Well Rested"
+                                                },
+                                                {
+                                                    "response_id": "3",
+                                                    "label": "Worn Out"
+                                                },
+                                                {
+                                                    "response_id": "4",
+                                                    "label": "Energized"
+                                                },
+                                                {
+                                                    "response_id": "5",
+                                                    "label": "Groggy"
+                                                },
+                                                {
+                                                    "response_id": "6",
+                                                    "label": "Satisfied"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "fixed": {
+                                            "item_id": "2",
+                                            "select": {
+                                                "min": 1,
+                                                "max": 1
+                                            },
+                                            "prompt": "On average, how many hours of sleep are you getting each night?",
+                                            "responses": [
+                                                {
+                                                    "response_id": "1",
+                                                    "label": "8+"
+                                                },
+                                                {
+                                                    "response_id": "2",
+                                                    "label": "5-7"
+                                                },
+                                                {
+                                                    "response_id": "3",
+                                                    "label": "3-4"
+                                                },
+                                                {
+                                                    "response_id": "4",
+                                                    "label": "1-2"
+                                                },
+                                                {
+                                                    "response_id": "5",
+                                                    "label": "None"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "free": {
+                                            "item_id": "1001",
+                                            "prompt": "What things keep you from getting a good night sleep?",
+                                            "options": {
+                                                "text": {
+                                                    "characters": {
+                                                        "min": 2,
+                                                        "max": 500
+                                                    }
+                                                },
+                                                "audio": {
+                                                    "time": {
+                                                        "max": 60
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "scale": {
+                                            "item_id": "1004",
+                                            "prompt": "On a scale of 1–5, how would you rate your energy levels?",
+                                            "min": {
+                                                "value": 1,
+                                                "label": "normal",
+                                                "emoji": "😀"
+                                            },
+                                            "max": {
+                                                "value": 5,
+                                                "label": "low",
+                                                "emoji": "😴"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "content_id": "1004",
+                    "duration": 5,
+                    "units": "minute",
+                    "template": "story_card_inline",
+                    "title": "You’re Wrapping Up Strong.",
+                    "subtitle": "Great job keeping your momentum today",
+                    "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
+                    "background_color": "#007AFF",
+                    "cta": ""
+                }
+            },
+            {
+                "preview": {
+                    "kind": {
+                        "assessment": {
+                            "assessment": {
+                                "assessment_id": "2001",
+                                "items": [
+                                    {
+                                        "fixed": {
+                                            "item_id": "10",
+                                            "select": {
+                                                "min": 1,
+                                                "max": 1
+                                            },
+                                            "prompt": "Have you taken time to relax today?",
+                                            "responses": [
+                                                {
+                                                    "response_id": "1",
+                                                    "label": "Yes"
+                                                },
+                                                {
+                                                    "response_id": "2",
+                                                    "label": "No"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "scale": {
+                                            "item_id": "11",
+                                            "prompt": "Rate today's stress (1–5)",
+                                            "min": {
+                                                "value": 1,
+                                                "label": "Calm",
+                                                "emoji": "🧘"
+                                            },
+                                            "max": {
+                                                "value": 5,
+                                                "label": "Stressed",
+                                                "emoji": "😫"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "content_id": "1005",
+                    "duration": 3,
+                    "units": "minute",
+                    "template": "story_card_inline",
+                    "title": "Finish on a High Note",
+                    "subtitle": "Celebrate your wins before winding down",
+                    "image": "",
+                    "cta": "",
+                    "background_color": ""
+                }
+            },
+            {
+                "preview": {
+                    "kind": {
+                        "assessment": {}
+                    },
+                    "content_id": "1006",
+                    "duration": 5,
+                    "units": "minute",
+                    "template": "story_card",
+                    "title": "Reflect on Your Workout",
+                    "subtitle": "Your feedback helps shape your progress",
+                    "image": "https://refuelapp-dev.web.app/content/1004/images/preview.png",
+                    "background_color": "#007AFF",
+                    "cta": "Give Feedback"
+                }
+            },
+            {
+                "preview": {
+                    "kind": {
+                        "journal": {}
+                    },
+                    "content_id": "1010",
+                    "duration": 2,
+                    "template": "story_card",
+                    "units": "minute",
+                    "title": "Keep the Streak Going",
+                    "subtitle": "You’re on a roll — keep journaling daily",
+                    "cta": "Open Journal",
+                    "image": "",
+                    "background_color": "#FFEEDD"
+                }
+            }
+        ],
+        "bottom_content": [
+            {
+                "title": "Morning Kickstart",
+                "subtitle": "Fuel your day with energy and purpose",
+                "section_id": "0",
+                "expanded": True,
+                "icon": "https://api.iconify.design/mdi/pen.svg",
+                "progress_label": "1 of 3 completed",
+                "items": [
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": False,
+                        "index": 0,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3401",
+                            "duration": 7,
+                            "units": "minute",
+                            "title": "Rise and Shine",
+                            "subtitle": "Energize your mind before the hustle starts",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#FFF3E0"
+                        }
+                    },
+                    {
+                        "template": "task_item_expanded",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": False,
+                        "index": 1,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3402",
+                            "duration": 22,
+                            "units": "minute",
+                            "title": "Hydration Hero",
+                            "subtitle": "Power up with a glass of water.",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#E0F7FA"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": True,
+                        "index": 2,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3403",
+                            "duration": 4,
+                            "units": "minute",
+                            "title": "Wake-Up Warmup",
+                            "subtitle": "Light stretches to activate your morning",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#FFFDE7"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Lunchtime Recharge",
+                "subtitle": "Restore clarity and presence",
+                "section_id": "1",
+                "expanded": False,
+                "icon": "https://api.iconify.design/mdi/box.svg",
+                "progress_label": "1 of 3 completed",
+                "items": [
+                    {
+                        "template": "task_item_expanded",
+                        "status": "incomplete",
+                        "index": 0,
+                        "bookmarked": False,
+                        "priority": False,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3501",
+                            "duration": 5,
+                            "units": "minute",
+                            "title": "Deep Breath Reset",
+                            "subtitle": "Slow breathing to reset and refocus",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#E8F5E9"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": False,
+                        "index": 1,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3502",
+                            "duration": 31,
+                            "units": "minute",
+                            "title": "Power Pause Movement",
+                            "subtitle": "Move a little, boost a lot",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#E0F2F1"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": False,
+                        "index": 2,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3503",
+                            "duration": 12,
+                            "units": "minute",
+                            "title": "Mental Refresh",
+                            "subtitle": "Clear your mind in just two minutes",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#FFF8E1"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Evening Cool Down",
+                "subtitle": "Unwind and get ready for tomorrow",
+                "section_id": "2",
+                "expanded": True,
+                "icon": "https://api.iconify.design/mdi/cloud.svg",
+                "progress_label": "0 of 3 completed",
+                "items": [
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "bookmarked": True,
+                        "priority": False,
+                        "index": 0,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3601",
+                            "duration": 1,
+                            "units": "minute",
+                            "title": "Unplug and Unwind",
+                            "subtitle": "Disconnect to rest better",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#E3F2FD"
+                        }
+                    },
+                    {
+                        "template": "task_item_expanded",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": False,
+                        "index": 1,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3602",
+                            "duration": 4,
+                            "units": "minute",
+                            "title": "Day-End Thanks",
+                            "subtitle": "Appreciate what today brought",
+                            "image": "https://api.iconify.design/mdi/home.svg",
+                            "background_color": "#F3E5F5"
+                        }
+                    },
+                    {
+                        "template": "task_item",
+                        "status": "incomplete",
+                        "bookmarked": False,
+                        "priority": True,
+                        "index": 2,
+                        "preview": {
+                            "kind": {
+                                "consume_page": {}
+                            },
+                            "content_id": "3603",
+                            "duration": 5,
+                            "units": "minute",
+                            "title": "Inspiration Read",
+                            "subtitle": "Close your day on a positive note",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#F1F8E9"
                         }

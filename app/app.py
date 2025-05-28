@@ -3,7 +3,7 @@ import json
 from datetime import date
 from typing import List, Dict
 
-from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, CONSUME_PAGE_RESPONSE,
+from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, CONSUME_PAGE_RESPONSE, REFRESH_TODAY_PAGE_RESPONSE,
                   INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE, TODAY_PAGE_RESPONSE)
 
 app = Flask(__name__)
@@ -18,17 +18,21 @@ def index():
 def get_assessment():
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
 
+
 @app.route('/api/consume_page', methods=['GET'])
 def get_consume_page():
     return Response(json.dumps(CONSUME_PAGE_RESPONSE), mimetype='application/json')
+
 
 @app.route('/api/explore', methods=['GET'])
 def get_explore():
     return Response(json.dumps(EXPLORE_RESPONSE), mimetype='application/json')
 
+
 @app.route('/api/today', methods=['GET'])
 def get_today():
     return Response(json.dumps(TODAY_PAGE_RESPONSE), mimetype='application/json')
+
 
 @app.route('/api/action', methods=['GET'])
 def get_action():
@@ -81,9 +85,10 @@ def get_response():
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
 
+
 @app.route('/api/refresh_today', methods=['GET'])
 def get_refresh_today():
-    return jsonify("{}")
+    return Response(json.dumps(TODAY_PAGE_RESPONSE), mimetype='application/json')
 
 
 @app.route('/api/content/<string:content_id>', methods=['GET'])
@@ -108,7 +113,8 @@ def pft_mock_test_summary():
     logged_exercises = [
         {"slot_id": "1", "exercise_id": "1", "name": "Pushups", "score": 17, "logged_value": "50", "unit": "rep"},
         {"slot_id": "2", "exercise_id": "3", "name": "Situps", "score": 18, "logged_value": "45", "unit": "rep"},
-        {"slot_id": "3", "exercise_id": "7", "name": "1.5 Mile Run", "score": 48, "logged_value": "12:30", "unit": "pace"}
+        {"slot_id": "3", "exercise_id": "7", "name": "1.5 Mile Run", "score": 48, "logged_value": "12:30",
+         "unit": "pace"}
     ]
 
     best_scores = {"1": 18, "2": 19, "3": 52}
