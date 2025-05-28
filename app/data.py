@@ -1494,7 +1494,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
     "today": {
         "date": "2025-05-28",
         "greeting": {
-            "text": "Here are some new tasks fro you Josh!.",
+            "text": "Here are some new tasks for you Josh!.",
             "supporting_text": "Let's get after it today, you got some new work ready!"
         },
         "top_content": [
