@@ -34,6 +34,10 @@ def get_today():
     return Response(json.dumps(TODAY_PAGE_RESPONSE), mimetype='application/json')
 
 
+@app.route('/api/refresh_today', methods=['GET'])
+def get_refresh_today():
+    return Response(json.dumps(REFRESH_TODAY_PAGE_RESPONSE), mimetype='application/json')
+
 @app.route('/api/action', methods=['GET'])
 def get_action():
     # Get the required type parameter
@@ -84,11 +88,6 @@ def get_response():
     else:
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
-
-
-@app.route('/api/refresh_today', methods=['GET'])
-def get_refresh_today():
-    return Response(json.dumps(TODAY_PAGE_RESPONSE), mimetype='application/json')
 
 
 @app.route('/api/content/<string:content_id>', methods=['GET'])
