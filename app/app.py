@@ -81,6 +81,10 @@ def get_response():
         # Default to "next" for any other item_id
         return jsonify(ACTIONS["next"])
 
+@app.route('/api/refresh_today', methods=['GET'])
+def get_refresh_today():
+    return jsonify("{}")
+
 
 @app.route('/api/content/<string:content_id>', methods=['GET'])
 def get_content(content_id):
