@@ -1294,9 +1294,10 @@ TODAY_PAGE_RESPONSE = {
                 "progress_label": "1 of 3 completed",
                 "items": [
                     {
-                        "template": "task_item",
-                        "status": "completed",
+                        "template": "task_item_expanded",
+                        "status": "late",
                         "bookmarked": False,
+                        "priority": True,
                         "index": 0,
                         "preview": {
                             "kind": {
@@ -1315,6 +1316,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "priority": False,
                         "index": 1,
                         "preview": {
                             "kind": {
@@ -1333,6 +1335,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "priority": False,
                         "index": 2,
                         "preview": {
                             "kind": {
@@ -1362,6 +1365,7 @@ TODAY_PAGE_RESPONSE = {
                         "status": "in-progress",
                         "index": 0,
                         "bookmarked": False,
+                        "priority": False,
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1376,9 +1380,10 @@ TODAY_PAGE_RESPONSE = {
                         }
                     },
                     {
-                        "template": "task_item",
+                        "template": "task_item_expanded",
                         "status": "completed",
                         "bookmarked": False,
+                        "priority": False,
                         "index": 1,
                         "preview": {
                             "kind": {
@@ -1397,6 +1402,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "in-progress",
                         "bookmarked": False,
+                        "priority": False,
                         "index": 2,
                         "preview": {
                             "kind": {
@@ -1422,9 +1428,10 @@ TODAY_PAGE_RESPONSE = {
                 "progress_label": "0 of 3 completed",
                 "items": [
                     {
-                        "template": "task_item",
+                        "template": "task_item_expanded",
                         "status": "complete",
                         "bookmarked": True,
+                        "priority": False,
                         "index": 0,
                         "preview": {
                             "kind": {
@@ -1441,8 +1448,9 @@ TODAY_PAGE_RESPONSE = {
                     },
                     {
                         "template": "task_item",
-                        "status": "incomplete",
+                        "status": "late",
                         "bookmarked": False,
+                        "priority": False,
                         "index": 1,
                         "preview": {
                             "kind": {
@@ -1461,6 +1469,7 @@ TODAY_PAGE_RESPONSE = {
                         "template": "task_item",
                         "status": "incomplete",
                         "bookmarked": False,
+                        "priority": False,
                         "index": 2,
                         "preview": {
                             "kind": {
