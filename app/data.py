@@ -1291,7 +1291,7 @@ TODAY_PAGE_RESPONSE = {
                 "section_id": "0",
                 "expanded": True,
                 "icon": "https://api.iconify.design/mdi/pen.svg",
-                "progress_label": "1 of 3 completed",
+                "progress_label": "1 of 3",
                 "items": [
                     {
                         "template": "task_item_expanded",
@@ -1358,7 +1358,7 @@ TODAY_PAGE_RESPONSE = {
                 "section_id": "1",
                 "expanded": False,
                 "icon": "https://api.iconify.design/mdi/box.svg",
-                "progress_label": "1 of 3 completed",
+                "progress_label": "1 of 3",
                 "items": [
                     {
                         "template": "task_item",
@@ -1425,7 +1425,7 @@ TODAY_PAGE_RESPONSE = {
                 "section_id": "2",
                 "expanded": True,
                 "icon": "https://api.iconify.design/mdi/cloud.svg",
-                "progress_label": "0 of 3 completed",
+                "progress_label": "0 of 3",
                 "items": [
                     {
                         "template": "task_item_expanded",
@@ -1721,7 +1721,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                 "section_id": "0",
                 "expanded": True,
                 "icon": "https://api.iconify.design/mdi/pen.svg",
-                "progress_label": "1 of 3 completed",
+                "progress_label": "1 of 3",
                 "items": [
                     {
                         "template": "task_item",
@@ -1788,7 +1788,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                 "section_id": "1",
                 "expanded": False,
                 "icon": "https://api.iconify.design/mdi/box.svg",
-                "progress_label": "1 of 3 completed",
+                "progress_label": "1 of 3",
                 "items": [
                     {
                         "template": "task_item_expanded",
@@ -1855,7 +1855,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                 "section_id": "2",
                 "expanded": True,
                 "icon": "https://api.iconify.design/mdi/cloud.svg",
-                "progress_label": "0 of 3 completed",
+                "progress_label": "0 of 3",
                 "items": [
                     {
                         "template": "task_item",
