@@ -1362,7 +1362,7 @@ TODAY_PAGE_RESPONSE = {
                 "items": [
                     {
                         "template": "task_item",
-                        "status": "in-progress",
+                        "status": "in_progress",
                         "index": 0,
                         "bookmarked": False,
                         "priority": False,
@@ -1400,7 +1400,7 @@ TODAY_PAGE_RESPONSE = {
                     },
                     {
                         "template": "task_item",
-                        "status": "in-progress",
+                        "status": "in_progress",
                         "bookmarked": False,
                         "priority": False,
                         "index": 2,
