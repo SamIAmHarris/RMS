@@ -97,6 +97,13 @@ def get_content(content_id):
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
 
 
+@app.route('/api/dismiss_story_card/<string:content_id>', methods=['GET'])
+def get_dismiss_story_card(content_id):
+    print(content_id)
+
+    return jsonify("{}")
+
+
 @app.route("/api/content_actions", methods=['POST'])
 def submit_content_action():
     return jsonify("{}")
