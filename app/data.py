@@ -1374,7 +1374,7 @@ TODAY_PAGE_RESPONSE = {
                             "duration": 4,
                             "units": "minute",
                             "title": "Take a Breath Break",
-                            "subtitle": "Reset your nervous system with deep breathing",
+                            "subtitle": "",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E8F5E9"
                         }
@@ -1393,7 +1393,7 @@ TODAY_PAGE_RESPONSE = {
                             "duration": 3,
                             "units": "minute",
                             "title": "Midday Movement",
-                            "subtitle": "Gentle stretch or walk to reenergize",
+                            "subtitle": "Gentle stretch or walk to reenergize yourself before you head out to do that thing. And remember that we need to also see if you can and yes that is good to know.",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E0F2F1"
                         }
@@ -1756,7 +1756,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                             "duration": 22,
                             "units": "minute",
                             "title": "Hydration Hero",
-                            "subtitle": "Power up with a glass of water.",
+                            "subtitle": "Power up with a glass of water. And think about doing the one thing that needs to be done before the other things and who knows why it is called a oh yes I get it.",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#E0F7FA"
                         }
@@ -1775,7 +1775,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                             "duration": 4,
                             "units": "minute",
                             "title": "Wake-Up Warmup",
-                            "subtitle": "Light stretches to activate your morning",
+                            "subtitle": "",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#FFFDE7"
                         }
