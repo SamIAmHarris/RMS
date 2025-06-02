@@ -1925,3 +1925,66 @@ REFRESH_TODAY_PAGE_RESPONSE = {
         ]
     }
 }
+
+ACTIVATE_PAGE_RESPONSE = {
+    "activate_page_id": "101",
+    "domain": {
+        "name": "Emotional Resilience",
+        "icon": "https://api.iconify.design/mdi/home.svg"
+    },
+    "header": {
+        "image": "",
+        "icon": "https://api.iconify.design/mdi/home.svg",
+        "tagline": "Decide with Less Stress",
+        "headline": "You don't need the perfect answer. You need a calm one.",
+        "introduction": "Overthinking steals time, drains energy, and rarely leads to better outcomes. Today we'll practice shifting from what if to what's next -- with tools that quiet mental clutter and help you move forward.",
+        "recommendation_reason": "This was recommended based on your goal to build stronger decision-making under uncertainty.",
+    },
+    "input_card" : {
+        "answered": False,
+    },
+    "activities" : [
+        {
+            "activity_id": "201",
+            "title": "Shrink the Stakes",
+            "image": "",
+            "description": "User the 5-5-5- rule to shift perspective from the moment to the other moment and yes that is interesting."
+        }
+    ],
+    "learn_more": [
+        {"text" : "1. Learn more about Emotional Resilience"},
+        {"text" : "2. Learn more about Emotional Resilience"},
+        {"text" : "3. Learn more about Emotional Resilience"},
+        {"text" : "4. Learn more about Emotional Resilience"},
+    ],
+    "instruction_block": {
+        "title": "Select an activity and return later",
+    },
+    "motivation_card": {
+        "quote": "Never be in a hurry; do everything quietly and in a calm spirit. Do not lose your inner peace for anything whatsoever, even if your whole world seems upset. - Saint Francis de Sales"
+    }
+}
+
+ACTIVITY_RESPONSE = {
+    "activity_id": "201",
+    "why_text": "Why this? Based on your recent check-in and focus on Emotional Resilience",
+    "header": {
+        "title": "Shrink the Stakes",
+        "icon": "https://api.iconify.design/mdi/home.svg",
+        "tagline": "Use throughout the day",
+        "image": "",
+    },
+    "conversation_prompt": {
+        "prompt": "Ask yourself: Will this decision matter in 5 minutes? 5 days? 5 years?",
+        "supporting_text": "This quick mental model helps reduce emotional intensity and unlock clarity. Most daily decisions don't need existential weight -- just forward movement."
+    },
+    "instructions": [
+
+    ],
+    "when_text": "When you're stuck, spinning, or anxious about making the 'perfect' choice.",
+    "history": [],
+    "reflection": {
+        "button_text": "Mark as Done",
+    },
+    "motivation_card": "Life doesn’t get easier or more forgiving, we get stronger and more resilient. - Steve Maraboli",
+}

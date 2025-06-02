@@ -4,7 +4,8 @@ from datetime import date
 from typing import List, Dict
 
 from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, CONSUME_PAGE_RESPONSE, REFRESH_TODAY_PAGE_RESPONSE,
-                  INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE, TODAY_PAGE_RESPONSE)
+                  INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE, TODAY_PAGE_RESPONSE, ACTIVITY_RESPONSE,
+                  ACTIVATE_PAGE_RESPONSE,)
 
 app = Flask(__name__)
 
@@ -95,6 +96,18 @@ def get_content(content_id):
     print(content_id)
 
     return Response(json.dumps(ASSESSMENT_RESPONSE), mimetype='application/json')
+
+@app.route('/api/activate_page/<string:activate_page_id>', methods=['GET'])
+def get_activate_page(activate_page_id):
+    print(activate_page_id)
+
+    return Response(json.dumps(ACTIVATE_PAGE_RESPONSE), mimetype='application/json')
+
+@app.route('/api/activity/<string:activity_id>', methods=['GET'])
+def get_activity(activity_id):
+    print(activity_id)
+
+    return Response(json.dumps(ACTIVITY_RESPONSE), mimetype='application/json')
 
 
 @app.route('/api/dismiss_story_card/<string:content_id>', methods=['GET'])
