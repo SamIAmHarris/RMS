@@ -1074,6 +1074,7 @@ TODAY_PAGE_RESPONSE = {
                         "assessment": {
                             "assessment": {
                                 "assessment_id": "2000",
+                                "resume_item_id": "2",
                                 "items": [
                                     {
                                         "fixed": {
@@ -1933,7 +1934,7 @@ ACTIVATE_PAGE_RESPONSE = {
         "icon": "https://api.iconify.design/mdi/home.svg"
     },
     "header": {
-        "image": "",
+        "image": "https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "icon": "https://api.iconify.design/mdi/home.svg",
         "tagline": "Decide with Less Stress",
         "headline": "You don't need the perfect answer. You need a calm one.",
@@ -1972,7 +1973,7 @@ ACTIVITY_RESPONSE = {
         "title": "Shrink the Stakes",
         "icon": "https://api.iconify.design/mdi/home.svg",
         "tagline": "Use throughout the day",
-        "image": "",
+        "image": "https://images.unsplash.com/photo-1476055090065-a605fefd840e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFjdGl2aXR5fGVufDB8fDB8fHww",
     },
     "conversation_prompt": {
         "prompt": "Ask yourself: Will this decision matter in 5 minutes? 5 days? 5 years?",
