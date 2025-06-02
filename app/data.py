@@ -1298,6 +1298,7 @@ TODAY_PAGE_RESPONSE = {
                         "status": "late",
                         "bookmarked": False,
                         "priority": True,
+                        "source": "goal",
                         "index": 0,
                         "preview": {
                             "kind": {
@@ -1384,6 +1385,7 @@ TODAY_PAGE_RESPONSE = {
                         "status": "completed",
                         "bookmarked": False,
                         "priority": False,
+                        "source": "goal",
                         "index": 1,
                         "preview": {
                             "kind": {
@@ -1432,6 +1434,7 @@ TODAY_PAGE_RESPONSE = {
                         "status": "complete",
                         "bookmarked": True,
                         "priority": False,
+                        "source": "goal",
                         "index": 0,
                         "preview": {
                             "kind": {
@@ -1747,6 +1750,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                         "status": "incomplete",
                         "bookmarked": False,
                         "priority": False,
+                        "source": "goal",
                         "index": 1,
                         "preview": {
                             "kind": {
@@ -1796,6 +1800,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                         "index": 0,
                         "bookmarked": False,
                         "priority": False,
+                        "source": "goal",
                         "preview": {
                             "kind": {
                                 "consume_page": {}
@@ -1881,6 +1886,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                         "status": "incomplete",
                         "bookmarked": False,
                         "priority": False,
+                        "source": "goal",
                         "index": 1,
                         "preview": {
                             "kind": {
