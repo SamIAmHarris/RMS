@@ -1309,7 +1309,7 @@ TODAY_PAGE_RESPONSE = {
                             "duration": 3,
                             "units": "minute",
                             "title": "Morning Momentum",
-                            "subtitle": "How to prime your mindset before the day begins",
+                            "subtitle": "",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#FFF3E0"
                         }
@@ -1897,7 +1897,7 @@ REFRESH_TODAY_PAGE_RESPONSE = {
                             "duration": 4,
                             "units": "minute",
                             "title": "Day-End Thanks",
-                            "subtitle": "Appreciate what today brought",
+                            "subtitle": "",
                             "image": "https://api.iconify.design/mdi/home.svg",
                             "background_color": "#F3E5F5"
                         }
