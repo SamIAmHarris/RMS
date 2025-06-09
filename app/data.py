@@ -1989,3 +1989,9 @@ ACTIVITY_RESPONSE = {
     },
     "motivation_card": "Life doesn’t get easier or more forgiving, we get stronger and more resilient. - Steve Maraboli",
 }
+
+JOURNAL_RESPONSE = {
+    "journal_id": "1004",
+    "prompt": "Tell us about some complex emotions you have been dealing with recently?",
+    "character_limit": 2000
+}

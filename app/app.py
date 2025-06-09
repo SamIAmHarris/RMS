@@ -5,7 +5,7 @@ from typing import List, Dict
 
 from data import (ASSESSMENT_RESPONSE, EXPLORE_RESPONSE, ACTIONS, CONSUME_PAGE_RESPONSE, REFRESH_TODAY_PAGE_RESPONSE,
                   INTRODUCTION_RESPONSE, RESULTS_RESPONSE, PFT_TEST_RESPONSE, TODAY_PAGE_RESPONSE, ACTIVITY_RESPONSE,
-                  ACTIVATE_PAGE_RESPONSE,)
+                  ACTIVATE_PAGE_RESPONSE, JOURNAL_RESPONSE)
 
 app = Flask(__name__)
 
@@ -108,6 +108,18 @@ def get_activity(activity_id):
     print(activity_id)
 
     return Response(json.dumps(ACTIVITY_RESPONSE), mimetype='application/json')
+
+
+@app.route('/api/journal/<string:journal_id>', methods=['GET'])
+def get_journal(journal_id):
+    print(journal_id)
+
+    return Response(json.dumps(JOURNAL_RESPONSE), mimetype='application/json')
+
+
+@app.route("/api/journal", methods=['POST'])
+def submit_journal():
+    return jsonify("{}")
 
 
 @app.route('/api/dismiss_story_card/<string:content_id>', methods=['GET'])
