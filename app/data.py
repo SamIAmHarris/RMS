@@ -525,7 +525,7 @@ PFT_TEST_RESPONSE = {
                             "loggable_suffix": "rep",
                             "items": [
                                 {
-                                    "prescribed_value": 60.0,
+                                    "prescribed_value": 40.0,
                                 },
                             ]
                         }
@@ -538,7 +538,7 @@ PFT_TEST_RESPONSE = {
                             "loggable_suffix": "rep",
                             "items": [
                                 {
-                                    "prescribed_value": 60.0,
+                                    "prescribed_value": 35.0,
                                 },
                             ]
                         }
