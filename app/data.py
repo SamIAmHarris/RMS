@@ -519,26 +519,26 @@ PFT_TEST_RESPONSE = {
                 "options": [
                     {
                         "exercise_id": "1",
-                        "name": "pushups",
+                        "name": "Pushups",
                         "sets_data": {
                             "prescribed_suffix": "sec",
                             "loggable_suffix": "rep",
                             "items": [
                                 {
-                                    "prescribed_value": 40.0,
+                                    "prescribed_value": 60.0,
                                 },
                             ]
                         }
                     },
                     {
                         "exercise_id": "2",
-                        "name": "hand release pushups",
+                        "name": "Hand Release Pushups",
                         "sets_data": {
                             "prescribed_suffix": "sec",
                             "loggable_suffix": "rep",
                             "items": [
                                 {
-                                    "prescribed_value": 35.0,
+                                    "prescribed_value": 60.0,
                                 },
                             ]
                         }
@@ -549,7 +549,7 @@ PFT_TEST_RESPONSE = {
                 "options": [
                     {
                         "exercise_id": "3",
-                        "name": "situps",
+                        "name": "Situps",
                         "sets_data": {
                             "prescribed_suffix": "sec",
                             "loggable_suffix": "rep",
@@ -562,7 +562,7 @@ PFT_TEST_RESPONSE = {
                     },
                     {
                         "exercise_id": "4",
-                        "name": "cross leg reverse crunch",
+                        "name": "Cross Leg Reverse Crunch",
                         "sets_data": {
                             "prescribed_suffix": "sec",
                             "loggable_suffix": "rep",
@@ -575,7 +575,7 @@ PFT_TEST_RESPONSE = {
                     },
                     {
                         "exercise_id": "5",
-                        "name": "plank hold",
+                        "name": "Plank Hold",
                         "sets_data": {
                             "prescribed_suffix": "sec",
                             "loggable_suffix": "sec",
@@ -593,7 +593,7 @@ PFT_TEST_RESPONSE = {
                 "options": [
                     {
                         "exercise_id": "6",
-                        "name": "run",
+                        "name": "Run",
                         "sets_data": {
                             "prescribed_suffix": "mi",
                             "loggable_suffix": "pace",
@@ -606,7 +606,7 @@ PFT_TEST_RESPONSE = {
                     },
                     {
                         "exercise_id": "7",
-                        "name": "hamr",
+                        "name": "HAMR",
                         "sets_data": {
                             "prescribed_suffix": "sec",
                             "loggable_suffix": "reps",
@@ -619,7 +619,7 @@ PFT_TEST_RESPONSE = {
                     },
                     {
                         "exercise_id": "8",
-                        "name": "walk",
+                        "name": "Walk",
                         "sets_data": {
                             "prescribed_suffix": "k",
                             "loggable_suffix": "pace",
